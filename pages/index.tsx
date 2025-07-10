@@ -1,7 +1,7 @@
 import { Container } from "@/components/common";
 import { SafetyBanner } from "@/components/molecules";
 import { Inter } from "next/font/google";
-import { Hero } from "@/components/home";
+import { About, Hero } from "@/components/home";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -15,6 +15,7 @@ export default function Home() {
         <main className="w-full relative">
           <SafetyBanner />
           <Hero />
+          <About />
         </main>
       </Container>
     </div>

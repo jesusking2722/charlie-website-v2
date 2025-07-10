@@ -25,6 +25,7 @@ const Hero = () => {
                 type="primary"
                 label="JOIN PRESALE"
                 icon={ArrowRightIcon}
+                hovered={true}
               />
               <Button type="outline" label="LEARN MORE" />
             </div>
