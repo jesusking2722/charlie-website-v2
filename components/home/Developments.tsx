@@ -1,3 +1,5 @@
+import { Button } from "../common";
+
 const Developments = () => {
   const completedDevelopments: string[] = [
     "Website",
@@ -31,16 +33,7 @@ const Developments = () => {
 
           <div className="w-full grid grid-cols-3 gap-6">
             {completedDevelopments.map((dev, index) => (
-              <div
-                key={index}
-                className="relative w-full h-[72px] bg-primary-gradient rounded-full"
-              >
-                <div className="absolute inset-[1px] flex items-center justify-center bg-[#1A062A] rounded-full">
-                  <span className="text-[#E0E0E0] font-semibold text-[28px]">
-                    {dev}
-                  </span>
-                </div>
-              </div>
+              <Button key={index} type="outline-primary" label={dev} />
             ))}
           </div>
         </div>

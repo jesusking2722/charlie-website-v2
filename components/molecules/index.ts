@@ -1,5 +1,6 @@
-export { default as SafetyBanner } from "./SafetyBanner";
+export { default as AccordionGroup } from "./AccordionGroup";
 export { default as FlowingLogos } from "./FlowingLogos";
 export { default as PresalePhaseCard } from "./PresalePhaseCard";
 export { default as RadioGroup } from "./RadioGroup";
 export { default as RoadmapCard } from "./RoadmapCard";
+export { default as SafetyBanner } from "./SafetyBanner";
