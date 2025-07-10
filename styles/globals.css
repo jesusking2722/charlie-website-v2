@@ -36,3 +36,41 @@ body {
   background-clip: text;
   color: transparent;
 }
+
+.bg-secondary-gradient {
+  position: relative;
+}
+
+.bg-secondary-gradient::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50px;
+  padding: 2px;
+  background: linear-gradient(to right, #aee2ff, #c3b1ff, #ffa8d1);
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask-composite: exclude;
+}
+
+.text-secondary-gradient {
+  background: linear-gradient(to right, #ffa8d1, #c3b1ff, #aee2ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.border-primary-gradient {
+  position: relative;
+}
+
+.border-primary-gradient::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50px;
+  padding: 2px;
+  background: linear-gradient(to right, #c427e0, #844aff, #12a9ff);
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask-composite: exclude;
+}

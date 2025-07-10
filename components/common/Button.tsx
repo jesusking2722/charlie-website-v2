@@ -1,7 +1,7 @@
 import Image, { StaticImageData } from "next/image";
 
 interface ButtonProps {
-  type: "primary" | "outline" | "icon" | "outline-icon";
+  type: "primary" | "outline" | "outline-secondary" | "icon" | "outline-icon";
   label?: string;
   icon?: StaticImageData;
   hovered?: boolean;
@@ -62,6 +62,33 @@ const Button: React.FC<ButtonProps> = ({
           {icon && <Image src={icon} alt="Icon" className="w-5 h-5" />}
         </button>
       </div>
+    );
+  }
+
+  if (type === "outline-secondary") {
+    return (
+      <button
+        className="
+      relative bg-secondary-gradient
+      w-52 h-16
+      flex items-center justify-center
+      bg-transparent
+      text-white
+      rounded-full
+      transition-all duration-300
+      gap-2
+      overflow-hidden cursor-pointer
+      p-[2px]
+      hover:shadow-[0_0_8px_rgba(196,39,224,0.7),0_0_12px_rgba(132,74,255,0.5),0_0_16px_rgba(18,169,255,0.3)]
+    "
+      >
+        <span className="relative z-10 font-semibold text-lg bg-gradient-to-r from-[#ffa8d1] via-[#c3b1ff] to-[#aee2ff] bg-clip-text text-transparent">
+          {label}
+        </span>
+        {icon && (
+          <Image src={icon} alt="Icon" className="relative z-10 w-5 h-5" />
+        )}
+      </button>
     );
   }
 };
