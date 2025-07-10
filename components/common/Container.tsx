@@ -1,4 +1,4 @@
-import { Navbar } from "../organism";
+import { Footer, Navbar } from "../organism";
 
 interface ContainerProps {
   children: React.ReactNode;
@@ -9,6 +9,7 @@ const Container: React.FC<ContainerProps> = ({ children }) => {
     <div className="w-full flex flex-col min-h-screen bg-[#1A062A]">
       <Navbar />
       {children}
+      <Footer />
     </div>
   );
 };

@@ -3,6 +3,8 @@ import LogoImage from "@/public/assets/pngs/logo.png";
 import Link from "next/link";
 import { Button } from "../common";
 import TelegramIcon from "@/public/assets/svgs/telegram-plane.svg";
+import TwitterIcon from "@/public/assets/svgs/twitter.svg";
+import FacebookIcon from "@/public/assets/svgs/facebook.svg";
 
 type TNavItem = {
   label: string;
@@ -47,8 +49,8 @@ const Navbar = () => {
       {/* Social Buttons */}
       <div className="flex items-center gap-4">
         <Button type="icon" icon={TelegramIcon} />
-        <Button type="icon" icon={TelegramIcon} />
-        <Button type="icon" icon={TelegramIcon} />
+        <Button type="icon" icon={TwitterIcon} />
+        <Button type="icon" icon={FacebookIcon} />
       </div>
     </header>
   );

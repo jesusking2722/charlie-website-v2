@@ -4,7 +4,7 @@ import ContactImage from "@/public/assets/pngs/contact.png";
 import ArrowRightIcon from "@/public/assets/svgs/arrow_right.svg";
 import { Button } from "../common";
 import { useForm } from "@formspree/react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 
 const Contact = () => {
@@ -39,7 +39,6 @@ const Contact = () => {
 
   const handleFormSubmit = async (e: any) => {
     e.preventDefault();
-    toast.success("Submitted");
 
     if (!isValid() || state.submitting) return;
 
@@ -47,11 +46,18 @@ const Contact = () => {
 
     await handleSubmit({ email, message });
 
-    setLoading(false);
-
     setEmail("");
     setMessage("");
   };
+
+  useEffect(() => {
+    if (state.succeeded) {
+      toast.success("Submitted");
+      setEmail("");
+      setMessage("");
+      setLoading(false);
+    }
+  }, [state.succeeded]);
 
   return (
     <section className="w-full relative">
