@@ -71,7 +71,7 @@ const Features = () => {
   ];
 
   return (
-    <section className="w-full space-y-28">
+    <section id="features" className="w-full space-y-28">
       <div className="w-[80%] mx-auto space-y-32">
         {/* Features */}
         <div className="w-full grid grid-cols-3 gap-14">

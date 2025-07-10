@@ -4,3 +4,5 @@ export { default as Card } from "./Card";
 export { default as Container } from "./Container";
 export { default as Radio } from "./Radio";
 export { default as Slider } from "./Slider";
+export { default as Translate } from "./Translate";
+export { default as Translator } from "./Translator";

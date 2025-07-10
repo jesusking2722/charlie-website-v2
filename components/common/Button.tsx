@@ -15,6 +15,7 @@ interface ButtonProps {
   hovered?: boolean;
   loading?: boolean;
   iconClassName?: string;
+  width?: "full";
   onClick?: () => void;
 }
 
@@ -25,6 +26,7 @@ const Button: React.FC<ButtonProps> = ({
   hovered,
   loading,
   iconClassName,
+  width,
   onClick,
 }) => {
   if (type === "icon" && icon) {
@@ -44,7 +46,9 @@ const Button: React.FC<ButtonProps> = ({
     return (
       <button
         className={`bg-primary-gradient flex items-center justify-center rounded-full border-2 border-white 
-        text-white font-semibold text-lg w-52 h-16 gap-2 transition-all duration-300 ${
+        text-white font-semibold text-lg ${
+          width ? "w-full" : "px-8"
+        } h-16 gap-2 transition-all duration-300 ${
           hovered
             ? `shadow-[0_0_10px_rgba(196,39,224,0.9),0_0_14px_rgba(132,74,255,0.7),0_0_18px_rgba(18,169,255,0.5)]
             ${

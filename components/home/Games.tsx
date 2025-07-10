@@ -21,7 +21,7 @@ const Games = () => {
   ];
 
   return (
-    <section className="w-full relative">
+    <section id="games" className="w-full relative">
       <Image
         src={BackgroundImage}
         alt="Games background"

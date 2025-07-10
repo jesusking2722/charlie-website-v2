@@ -8,7 +8,7 @@ import EUFlagIcon from "@/public/assets/svgs/eu.svg";
 
 const Team = () => {
   return (
-    <section className="w-full">
+    <section id="team" className="w-full">
       <div className="w-[70%] mx-auto space-y-14">
         <h1 className="text-white font-black text-7xl">CEO</h1>
         <div className="w-full flex items-center gap-24">

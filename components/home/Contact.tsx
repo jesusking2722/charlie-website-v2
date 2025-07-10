@@ -60,7 +60,7 @@ const Contact = () => {
   }, [state.succeeded]);
 
   return (
-    <section className="w-full relative">
+    <section id="contact" className="w-full relative">
       <Image
         src={BackgroundImage}
         alt="Contact Background"

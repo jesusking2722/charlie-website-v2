@@ -4,7 +4,7 @@ import { RoadmapCard } from "../molecules";
 
 const Roadmap = () => {
   return (
-    <section className="w-full relative">
+    <section id="roadmap" className="w-full relative">
       <Image
         src={BackgroundImage}
         alt="Roadmap Background"

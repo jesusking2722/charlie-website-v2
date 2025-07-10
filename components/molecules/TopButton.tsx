@@ -50,7 +50,7 @@ const TopButton = () => {
           className="w-16 h-16 flex items-center justify-center fixed bottom-5 right-5 z-50"
         >
           <Button
-            type="primary"
+            type="primary-icon"
             icon={ArrowIcon}
             iconClassName="-rotate-90"
             hovered={true}
