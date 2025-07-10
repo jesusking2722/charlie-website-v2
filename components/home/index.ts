@@ -7,6 +7,7 @@ export { default as Hero } from "./Hero";
 export { default as Marketing } from "./Marketing";
 export { default as P2ERevolution } from "./P2ERevolution";
 export { default as PresalePhases } from "./PresalePhases";
+export { default as Questions } from "./Questions";
 export { default as Roadmap } from "./Roadmap";
 export { default as ServiceIntro } from "./ServiceIntro";
 export { default as Tokenomics } from "./Tokenomics";
