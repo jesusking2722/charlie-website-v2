@@ -12,6 +12,7 @@ import {
   Tokenomics,
   PresalePhases,
   Developments,
+  Marketing,
 } from "@/components/home";
 
 const inter = Inter({
@@ -35,6 +36,7 @@ export default function Home() {
           <Tokenomics />
           <PresalePhases />
           <Developments />
+          <Marketing />
         </main>
       </Container>
     </div>

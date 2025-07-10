@@ -3,6 +3,7 @@ export { default as Developments } from "./Developments";
 export { default as Features } from "./Features";
 export { default as Games } from "./Games";
 export { default as Hero } from "./Hero";
+export { default as Marketing } from "./Marketing";
 export { default as P2ERevolution } from "./P2ERevolution";
 export { default as PresalePhases } from "./PresalePhases";
 export { default as Roadmap } from "./Roadmap";
