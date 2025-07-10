@@ -10,4 +10,5 @@ export { default as PresalePhases } from "./PresalePhases";
 export { default as Questions } from "./Questions";
 export { default as Roadmap } from "./Roadmap";
 export { default as ServiceIntro } from "./ServiceIntro";
+export { default as Team } from "./Team";
 export { default as Tokenomics } from "./Tokenomics";
