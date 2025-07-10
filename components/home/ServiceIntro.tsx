@@ -14,7 +14,7 @@ const ServiceIntro = () => {
               <strong className="text-primary-gradient">$500,000</strong> in
               Airdrops and Giveaways
             </h1>
-            <p className="text-[#D9D9D9] text-[20px]">
+            <p className="text-[#E0E0E0] text-[20px]">
               We are thrilled to dedicate $500,000 to airdrops and giveaways as
               part of our mission to reward and engage our community. Over the
               next 30 months (2.5 years), expect regular airdrops and
@@ -41,7 +41,7 @@ const ServiceIntro = () => {
 
           <div className="w-2/3 space-y-8">
             <h1 className="text-white font-black text-7xl">Heavy Marketing</h1>
-            <p className="text-[#D9D9D9] text-[20px]">
+            <p className="text-[#E0E0E0] text-[20px]">
               To ensure the long-term success of our project, we've allocated a
               massive $1,000,000 to marketing. Our strategy includes:
             </p>

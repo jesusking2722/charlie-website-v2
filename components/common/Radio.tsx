@@ -56,7 +56,7 @@ const Radio: React.FC<IRadio> = ({
         </div>
         {label && (
           <label
-            className={`text-[#D9D9D9] text-[20px] font-semibold cursor-pointer -mt-1 flex-1 ${
+            className={`text-[#E0E0E0] text-[20px] font-semibold cursor-pointer -mt-1 flex-1 ${
               !disabled && "cursor-pointer"
             }`}
             onClick={() => !disabled && onChange && onChange()}

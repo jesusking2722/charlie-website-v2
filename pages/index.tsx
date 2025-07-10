@@ -9,6 +9,7 @@ import {
   P2ERevolution,
   ServiceIntro,
   Roadmap,
+  Tokenomics,
 } from "@/components/home";
 
 const inter = Inter({
@@ -29,6 +30,7 @@ export default function Home() {
           <P2ERevolution />
           <ServiceIntro />
           <Roadmap />
+          <Tokenomics />
         </main>
       </Container>
     </div>

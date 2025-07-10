@@ -30,7 +30,7 @@ const Games = () => {
 
       <div className="absolute inset-0 flex flex-col items-center justify-center py-14">
         <div className="w-[80%] mx-auto flex flex-col items-center justify-center gap-8">
-          <h2 className="text-[#D9D9D9] text-2xl text-center">
+          <h2 className="text-[#E0E0E0] text-2xl text-center">
             Upcoming games
             <br />
             Q3 2025/Q1 2026
@@ -39,7 +39,7 @@ const Games = () => {
           </h2>
           <h1 className="text-white font-black text-7xl">Games</h1>
           <Slider slides={slides} />
-          <p className="text-[#D9D9D9] font-semibold text-[32px]">
+          <p className="text-[#E0E0E0] font-semibold text-[32px]">
             You can play now our P2E game on telegram
           </p>
         </div>

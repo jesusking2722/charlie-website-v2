@@ -42,7 +42,7 @@ const P2ERevolution = () => {
             </button>
           </div>
 
-          <p className="text-[#D9D9D9] text-[20px]">
+          <p className="text-[#E0E0E0] text-[20px]">
             Check out our amazing app—it has it all: minigames, farming, a
             marketplace, news updated and much more! Whether you’re looking to
             challenge your skills with exciting minigames, grow your own virtual
@@ -58,7 +58,7 @@ const P2ERevolution = () => {
           <div className="flex items-start gap-4">
             <Radio name="" value={null} checked={true} disabled={true} />
             <div className="flex flex-col items-start -mt-1">
-              <span className="text-[#D9D9D9] text-[20px]">
+              <span className="text-[#E0E0E0] text-[20px]">
                 Check it out on Telegram
               </span>
               <Link
@@ -73,16 +73,16 @@ const P2ERevolution = () => {
           <div className="relative w-full h-[32px] bg-primary-gradient">
             <div className="absolute inset-[1px] bg-[#1A062A] grid grid-cols-4">
               <div className="border-primary-gradient-right px-5 flex items-center justify-center">
-                <span className=" text-[#D9D9D9] text-[20px]">MULTICHAIN</span>
+                <span className=" text-[#E0E0E0] text-[20px]">MULTICHAIN</span>
               </div>
               <div className="border-primary-gradient-right px-5 flex items-center justify-center">
-                <span className=" text-[#D9D9D9] text-[20px]">DEX</span>
+                <span className=" text-[#E0E0E0] text-[20px]">DEX</span>
               </div>
               <div className="border-primary-gradient-right px-5 flex items-center justify-center">
-                <span className=" text-[#D9D9D9] text-[20px]">LAUNCHPAD</span>
+                <span className=" text-[#E0E0E0] text-[20px]">LAUNCHPAD</span>
               </div>
               <div className="px-5 flex items-center justify-center">
-                <span className=" text-[#D9D9D9] text-[20px]">PC GAME</span>
+                <span className=" text-[#E0E0E0] text-[20px]">PC GAME</span>
               </div>
             </div>
           </div>

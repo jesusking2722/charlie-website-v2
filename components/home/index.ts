@@ -5,3 +5,4 @@ export { default as Hero } from "./Hero";
 export { default as P2ERevolution } from "./P2ERevolution";
 export { default as Roadmap } from "./Roadmap";
 export { default as ServiceIntro } from "./ServiceIntro";
+export { default as Tokenomics } from "./Tokenomics";

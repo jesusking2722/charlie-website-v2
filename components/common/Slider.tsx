@@ -39,7 +39,7 @@ const Slider: React.FC<SliderProps> = ({ slides }) => {
               <h1 className="text-white font-bold text-[42px]">
                 {slide.title}
               </h1>
-              <p className="text-[#D9D9D9] text-[20px]">{slide.description}</p>
+              <p className="text-[#E0E0E0] text-[20px]">{slide.description}</p>
             </div>
             <div className="absolute h-2 bg-primary-gradient rounded-b-3xl left-0 right-0 bottom-0"></div>
           </div>

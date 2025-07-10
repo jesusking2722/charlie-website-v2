@@ -106,14 +106,14 @@ const Features = () => {
 
             {/* Description */}
             <div className="space-y-3">
-              <p className="text-[#D9D9D9] text-[20px]">
+              <p className="text-[#E0E0E0] text-[20px]">
                 Every component in our ecosystem strengthens our Charlie Token
                 (CHRLE). Through an innovative 20% automatic buy-and-burn
                 mechanism on all payments (subscriptions, purchases, marketplace
                 activity, game spending, and more), CHRLE supply is constantly
                 reduced — driving scarcity, value, and investor rewards.
               </p>
-              <p className="text-[#D9D9D9] text-[20px]">
+              <p className="text-[#E0E0E0] text-[20px]">
                 With hundreds of thousands of users expected across our
                 platforms, this relentless burning process guarantees a
                 continuously rising token floor.
@@ -160,7 +160,7 @@ const Features = () => {
               </div>
             </div>
 
-            <p className="text-[#D9D9D9] text-[20px]">
+            <p className="text-[#E0E0E0] text-[20px]">
               We are not just another project. We are an unstoppable force,
               combining technology, utility, and visionary leadership to reshape
               Web3 forever.
@@ -225,7 +225,7 @@ const Features = () => {
               />
             </div>
 
-            <p className="text-[#D9D9D9] text-[20px]">
+            <p className="text-[#E0E0E0] text-[20px]">
               Charlie Unicorn AI isn't following trends — We are setting them.
               <br />
               <br />

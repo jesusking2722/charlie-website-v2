@@ -43,7 +43,7 @@ const Card: React.FC<ICard> = ({
 
             <h1 className="text-white font-bold text-[32px]">{title}</h1>
 
-            <p className="text-[#D9D9D9] text-[20px]">{description}</p>
+            <p className="text-[#E0E0E0] text-[20px]">{description}</p>
           </div>
         </div>
       </div>
