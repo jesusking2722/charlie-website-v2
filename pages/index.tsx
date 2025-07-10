@@ -16,6 +16,7 @@ import {
   Goals,
   Questions,
   Team,
+  Contact,
 } from "@/components/home";
 
 const inter = Inter({
@@ -43,6 +44,7 @@ export default function Home() {
           <Goals />
           <Questions />
           <Team />
+          <Contact />
         </main>
       </Container>
     </div>
