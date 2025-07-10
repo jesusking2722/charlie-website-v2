@@ -28,8 +28,8 @@ const Games = () => {
         className="w-full h-auto"
       />
 
-      <div className="absolute inset-0 flex flex-col items-center justify-center">
-        <div className="w-[80%] mx-auto flex flex-col items-center justify-center gap-14">
+      <div className="absolute inset-0 flex flex-col items-center justify-center py-14">
+        <div className="w-[80%] mx-auto flex flex-col items-center justify-center gap-8">
           <h2 className="text-[#D9D9D9] text-2xl text-center">
             Upcoming games
             <br />

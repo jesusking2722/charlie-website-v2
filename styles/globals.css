@@ -74,3 +74,13 @@ body {
   mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   mask-composite: exclude;
 }
+
+.border-primary-gradient-right {
+  border-top: 0;
+  border-left: 0;
+  border-bottom: 0;
+  border-right-width: 1px; /* thickness of right border */
+  border-right-style: solid;
+  border-image: linear-gradient(to bottom, #c427e0, #844aff, #12a9ff) 1;
+  border-image-slice: 1;
+}

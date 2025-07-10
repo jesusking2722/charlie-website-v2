@@ -1,7 +1,7 @@
 import { Container } from "@/components/common";
 import { SafetyBanner } from "@/components/molecules";
 import { Inter } from "next/font/google";
-import { About, Features, Hero, Games } from "@/components/home";
+import { About, Features, Hero, Games, P2ERevolution } from "@/components/home";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -18,6 +18,7 @@ export default function Home() {
           <About />
           <Features />
           <Games />
+          <P2ERevolution />
         </main>
       </Container>
     </div>
