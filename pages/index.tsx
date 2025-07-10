@@ -8,6 +8,7 @@ import {
   Games,
   P2ERevolution,
   ServiceIntro,
+  Roadmap,
 } from "@/components/home";
 
 const inter = Inter({
@@ -27,6 +28,7 @@ export default function Home() {
           <Games />
           <P2ERevolution />
           <ServiceIntro />
+          <Roadmap />
         </main>
       </Container>
     </div>

@@ -84,3 +84,28 @@ body {
   border-image: linear-gradient(to bottom, #c427e0, #844aff, #12a9ff) 1;
   border-image-slice: 1;
 }
+
+.border-primary-gradient-top-bottom {
+  position: relative;
+  overflow: hidden;
+}
+
+.border-primary-gradient-top-bottom::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(to right, #c427e0, #844aff, #12a9ff);
+}
+
+.border-primary-gradient-top-bottom::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(to right, #c427e0, #844aff, #12a9ff);
+}

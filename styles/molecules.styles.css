@@ -10,3 +10,17 @@
 .animate-marquee {
   animation: marquee 30s linear infinite;
 }
+
+.roadmap-card {
+  background: linear-gradient(rgba(40, 12, 63, 0.6), rgba(40, 12, 63, 0.6))
+      padding-box,
+    linear-gradient(
+        to right,
+        rgba(196, 39, 224, 0.2),
+        rgba(132, 74, 255, 0.2),
+        rgba(18, 169, 255, 0.2)
+      )
+      border-box;
+  border-radius: 10px;
+  border: 1px solid transparent;
+}
