@@ -10,6 +10,7 @@ import {
   ServiceIntro,
   Roadmap,
   Tokenomics,
+  PresalePhases,
 } from "@/components/home";
 
 const inter = Inter({
@@ -31,6 +32,7 @@ export default function Home() {
           <ServiceIntro />
           <Roadmap />
           <Tokenomics />
+          <PresalePhases />
         </main>
       </Container>
     </div>
