@@ -1,7 +1,7 @@
 import Image from "next/image";
 import AirdropImage from "@/public/assets/pngs/airdrops.png";
 import HeavyMarketingImage from "@/public/assets/pngs/heavy_marketing.png";
-import { Radio } from "../common";
+import { Radio, Translate } from "../common";
 
 const ServiceIntro = () => {
   return (
@@ -11,15 +11,17 @@ const ServiceIntro = () => {
         <div className="w-full flex xl:flex-row lg:flex-row flex-col items-center xl:gap-14 lg:gap-14 gap-6 rounded-2xl bg-[#280C3F] xl:p-10 lg:p-10 md:p-10 p-6">
           <div className="xl:w-2/3 lg:w-2/3 w-full xl:space-y-14 lg:space-y-14 space-y-6">
             <h1 className="text-white font-black xl:text-7xl lg:text-7xl text-4xl">
-              <strong className="text-primary-gradient">$500,000</strong> in
-              Airdrops and Giveaways
+              <strong className="text-primary-gradient">$500,000</strong>{" "}
+              <Translate>in Airdrops and Giveaways</Translate>
             </h1>
             <p className="text-[#E0E0E0] xl:text-[20px] lg:text-[20px] md:text-[20px] text-[16px]">
-              We are thrilled to dedicate $500,000 to airdrops and giveaways as
-              part of our mission to reward and engage our community. Over the
-              next 30 months (2.5 years), expect regular airdrops and
-              promotional events designed to foster excitement and appreciation.
-              and appreciation.
+              <Translate>
+                We are thrilled to dedicate $500,000 to airdrops and giveaways
+                as part of our mission to reward and engage our community. Over
+                the next 30 months (2.5 years), expect regular airdrops and
+                promotional events designed to foster excitement and
+                appreciation. and appreciation.
+              </Translate>
             </p>
           </div>
           <Image
@@ -45,11 +47,13 @@ const ServiceIntro = () => {
 
           <div className="xl:w-2/3 lg:w-2/3 w-full xl:space-y-8 lg:space-y-8 space-y-6">
             <h1 className="text-white font-black xl:text-7xl lg:text-7xl text-4xl">
-              Heavy Marketing
+              <Translate>Heavy Marketing</Translate>
             </h1>
             <p className="text-[#E0E0E0] xl:text-[20px] lg:text-[20px] md:text-[20px] text-[16px]">
-              To ensure the long-term success of our project, we've allocated a
-              massive $1,000,000 to marketing. Our strategy includes:
+              <Translate>
+                To ensure the long-term success of our project, we've allocated
+                a massive $1,000,000 to marketing. Our strategy includes:
+              </Translate>
             </p>
 
             <div className="w-full xl:space-y-6 lg:space-y-6 space-y-4">

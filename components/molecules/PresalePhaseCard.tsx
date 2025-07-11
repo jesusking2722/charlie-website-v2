@@ -1,3 +1,5 @@
+import { Translate } from "../common";
+
 export interface IPresalePhaseCard {
   title: string;
   description: string;
@@ -16,10 +18,10 @@ const PresalePhaseCard: React.FC<IPresalePhaseCard> = ({
     >
       <div className="absolute inset-[1px] bg-[rgba(40,12,63,0.8)] p-6 space-y-6 rounded-xl">
         <h1 className="text-white font-bold xl:text-[32px] lg:text-[32px] md:text-[32px] text-2xl">
-          {title}
+          <Translate>{title}</Translate>
         </h1>
         <p className="text-[#E0E0E0] xl:text-[20px] lg:text-[20px] text-[16px]">
-          {description}
+          <Translate>{description}</Translate>
         </p>
       </div>
     </div>

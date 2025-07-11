@@ -1,5 +1,6 @@
 import BackgroundImage from "@/public/assets/pngs/marketing_bg.png";
 import Image from "next/image";
+import { Translate } from "../common";
 
 type TCard = {
   title: string;
@@ -44,9 +45,11 @@ const Marketing = () => {
             {cards.map((card, index) => (
               <div key={index} className="roadmap-card w-full h-[320px] p-6">
                 <h1 className="text-white font-bold text-[32px]">
-                  {card.title}
+                  <Translate>{card.title}</Translate>
                 </h1>
-                <p className="text-[#E0E0E0] text-[20px]">{card.description}</p>
+                <p className="text-[#E0E0E0] text-[20px]">
+                  <Translate>{card.description}</Translate>
+                </p>
               </div>
             ))}
           </div>
@@ -60,10 +63,10 @@ const Marketing = () => {
             className="roadmap-card w-full md:h-[300px] p-6 space-y-4"
           >
             <h1 className="text-white font-bold xl:text-[32px] lg:text-[32px] md:text-[32px] text-2xl">
-              {card.title}
+              <Translate>{card.title}</Translate>
             </h1>
             <p className="text-[#E0E0E0] xl:text-[20px] lg:text-[20px] md:text-[20px] text-[16px]">
-              {card.description}
+              <Translate>{card.description}</Translate>
             </p>
           </div>
         ))}

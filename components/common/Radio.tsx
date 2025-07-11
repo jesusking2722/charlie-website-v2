@@ -1,4 +1,5 @@
 import React from "react";
+import Translate from "./Translate";
 
 export interface IRadio {
   name: string;
@@ -61,7 +62,7 @@ const Radio: React.FC<IRadio> = ({
             }`}
             onClick={() => !disabled && onChange && onChange()}
           >
-            {label}
+            <Translate>{label}</Translate>
           </label>
         )}
       </div>

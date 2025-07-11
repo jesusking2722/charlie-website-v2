@@ -1,5 +1,6 @@
 import { IPresalePhaseCard } from "../molecules/PresalePhaseCard";
 import { PresalePhaseCard } from "../molecules";
+import { Translate } from "../common";
 
 const PresalePhases = () => {
   const cards: IPresalePhaseCard[] = [
@@ -38,7 +39,7 @@ const PresalePhases = () => {
     <section className="w-full -mt-24">
       <div className="xl:w-[80%] lg:w-[80%] w-[95%] mx-auto xl:space-y-14 lg:space-y-14 space-y-6">
         <h1 className="text-center text-white font-black xl:text-7xl lg:text-7xl text-4xl">
-          Presale Phases
+          <Translate>Presale Phases</Translate>
         </h1>
 
         {/* Phases card */}

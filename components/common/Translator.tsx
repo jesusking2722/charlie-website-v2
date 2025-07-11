@@ -7,7 +7,7 @@ export const TranslatorContext = createContext({
   loading: false,
   error: null,
   translateText: async (text: any) => text,
-  setLanguage: () => {},
+  setLanguage: (code: string) => {},
 });
 
 /**

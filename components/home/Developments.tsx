@@ -1,4 +1,4 @@
-import { Button } from "../common";
+import { Button, Translate } from "../common";
 
 const Developments = () => {
   const completedDevelopments: string[] = [
@@ -28,7 +28,7 @@ const Developments = () => {
         {/* Completed developments */}
         <div className="w-full xl:space-y-14 lg:space-y-14 space-y-6">
           <h1 className="text-white font-black xl:text-7xl lg:text-7xl text-4xl text-center">
-            Completed Developments
+            <Translate>Completed Developments</Translate>
           </h1>
 
           <div className="w-full grid xl:grid-cols-3 lg:grid-cols-3 grid-cols-1 gap-6">
@@ -42,7 +42,7 @@ const Developments = () => {
         <div className="w-full flex xl:flex-row lg:flex-row flex-col items-center gap-6">
           <div className="xl:w-2/5 lg:w-2/5 w-full">
             <h1 className="text-white font-black xl:text-7xl lg:text-7xl text-4xl xl:text-left lg:text-left text-center">
-              Ongoing Developments
+              <Translate>Ongoing Developments</Translate>
             </h1>
           </div>
           <div className="xl:w-3/5 lg:w-3/5 w-full grid xl:grid-cols-2 lg:grid-cols-2 grid-cols-1 gap-6">
@@ -55,7 +55,7 @@ const Developments = () => {
               >
                 <div className="absolute inset-[1px] bg-[rgba(40,12,63,0.8)] rounded-xl flex items-center justify-center">
                   <span className="text-[#E0E0E0] font-semibold text-[28px]">
-                    {dev}
+                    <Translate>{dev}</Translate>
                   </span>
                 </div>
               </div>

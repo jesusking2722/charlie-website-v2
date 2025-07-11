@@ -1,4 +1,5 @@
 import Image, { StaticImageData } from "next/image";
+import Translate from "./Translate";
 
 export interface ICard {
   icon: StaticImageData;
@@ -37,16 +38,16 @@ const Card: React.FC<ICard> = ({
           <div
             className={`w-full flex flex-col items-start ${
               gap ? gap : "gap-4"
-            } xl:p-6 lg:p-6 md:p-6 p-4`}
+            } xl:p-6 lg:p-6 md:p-6 p-4 overflow-hidden`}
           >
             <Image src={icon} alt={title} className="w-[104px] h-[104px]" />
 
             <h1 className="text-white font-bold xl:text-[32px] lg:text-[32px] md:text-[32px] text-2xl">
-              {title}
+              <Translate>{title}</Translate>
             </h1>
 
             <p className="text-[#E0E0E0] xl:text-[20px] lg:text-[20px] md:text-[20px] text-[16px]">
-              {description}
+              <Translate>{description}</Translate>
             </p>
           </div>
         </div>

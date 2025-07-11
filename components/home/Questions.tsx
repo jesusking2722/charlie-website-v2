@@ -2,6 +2,7 @@ import Image from "next/image";
 import ListingOnImage from "@/public/assets/pngs/listing_on.png";
 import QuestionImage from "@/public/assets/pngs/question.png";
 import TelegramIcon from "@/public/assets/svgs/telegram-plane.svg";
+import { Translate } from "../common";
 
 const Questions = () => {
   const handleTelegram = () => {
@@ -20,10 +21,10 @@ const Questions = () => {
 
           <div className="xl:w-2/3 lg:w-2/3 w-full xl:space-y-8 lg:space-y-8 space-y-6">
             <h1 className="text-white font-black xl:text-7xl lg:text-7xl text-4xl">
-              Listings On
+              <Translate>Listings On</Translate>
             </h1>
             <p className="text-[#E0E0E0] font-medium xl:text-[32px] lg:text-[32px] text-[20px]">
-              Tier 1 and Tier 2 exchanges soon !
+              <Translate>Tier 1 and Tier 2 exchanges soon !</Translate>
             </p>
           </div>
 
@@ -47,11 +48,13 @@ const Questions = () => {
           />
           <div className="xl:w-2/3 lg:w-2/3 w-full xl:space-y-8 lg:space-y-8 space-y-6">
             <h1 className="text-white font-black xl:text-7xl lg:text-7xl text-4xl">
-              Questions??
+              <Translate>Questions??</Translate>
             </h1>
             <p className="text-[#E0E0E0] font-medium xl:text-[32px] lg:text-[32px] text-[20px]">
-              Team of our moderators will surely help and answer all your
-              questions
+              <Translate>
+                Team of our moderators will surely help and answer all your
+                questions
+              </Translate>
             </p>
             <div className="relative w-[71px] h-[71px] bg-primary-gradient rounded-md transition-all duration-300 hover:shadow-[0_0_8px_rgba(196,39,224,0.7),0_0_12px_rgba(132,74,255,0.5),0_0_16px_rgba(18,169,255,0.3)]">
               <button

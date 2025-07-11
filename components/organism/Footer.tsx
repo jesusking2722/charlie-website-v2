@@ -3,7 +3,7 @@ import Image from "next/image";
 import TelegramIcon from "@/public/assets/svgs/telegram-plane.svg";
 import TwitterIcon from "@/public/assets/svgs/twitter.svg";
 import FacebookIcon from "@/public/assets/svgs/facebook.svg";
-import { Button } from "../common";
+import { Button, Translate } from "../common";
 
 const Footer = () => {
   const handleTelegram = () => {
@@ -25,7 +25,8 @@ const Footer = () => {
     <footer className="w-full bg-[#12051D] py-6 flex flex-col items-center justify-center">
       <div className="w-[80%] mx-auto xl:flex lg:flex hidden items-center justify-between">
         <span className="text-[#F5F5F5] text-lg font-light">
-          ©Copyright {new Date().getFullYear()} | All rights reserved
+          ©Copyright {new Date().getFullYear()} |{" "}
+          <Translate>All rights reserved</Translate>
         </span>
         <Image
           src={LogoImage}
@@ -53,7 +54,8 @@ const Footer = () => {
         </div>
 
         <span className="text-[#F5F5F5] text-lg font-light">
-          ©Copyright {new Date().getFullYear()} | All rights reserved
+          ©Copyright {new Date().getFullYear()} |{" "}
+          <Translate>All rights reserved</Translate>
         </span>
       </div>
     </footer>

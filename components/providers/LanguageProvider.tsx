@@ -1,22 +1,80 @@
 import { createContext, useState, useContext, useEffect } from "react";
 
-// Available languages with their display names
 export const AVAILABLE_LANGUAGES = {
+  // Europe
   en: "English",
-  pl: "Polski", // Polish
-  fr: "Français", // French
-  pt: "Português", // Portuguese
-  ru: "Русский", // Russian
-  de: "Deutsch", // German
-  it: "Italiano", // Italian
-  tr: "Türkçe", // Turkish
-  es: "Español", // Spanish
+  pl: "Polski",
+  fr: "Français",
+  pt: "Português",
+  ru: "Русский",
+  de: "Deutsch",
+  it: "Italiano",
+  tr: "Türkçe",
+  es: "Español",
+  nl: "Nederlands",
+  sv: "Svenska",
+  da: "Dansk", // Changed from 'dk' to 'da'
+  fi: "Suomi",
+  no: "Norsk",
+  cs: "Čeština", // Changed from 'cz' to 'cs'
+  sk: "Slovenčina",
+  hu: "Magyar",
+  ro: "Română",
+  bg: "Български",
+  el: "Ελληνικά", // Changed from 'gr' to 'el'
+  hr: "Hrvatski",
+  sr: "Српски",
+  uk: "Українська", // Changed from 'ua' to 'uk'
+
+  // Asia
+  zh: "中文", // Changed from 'cn' to 'zh'
+  ja: "日本語", // Changed from 'jp' to 'ja'
+  ko: "한국어", // Changed from 'kr' to 'ko'
+  th: "ไทย",
+  vi: "Tiếng Việt",
+  id: "Bahasa Indonesia",
+  ms: "Bahasa Melayu",
+  hi: "हिन्दी", // Changed from 'in' to 'hi'
+};
+
+export const LANGUAGE_TO_FLAG_MAP = {
+  en: "gb-ukm",
+  pl: "pl",
+  fr: "fr",
+  pt: "pt",
+  ru: "ru",
+  de: "de",
+  it: "it",
+  tr: "tr",
+  es: "es",
+  nl: "nl",
+  sv: "se",
+  da: "dk", // Flag uses country code 'dk' for Denmark
+  fi: "fi",
+  no: "no",
+  cs: "cz", // Flag uses country code 'cz' for Czech Republic
+  sk: "sk",
+  hu: "hu",
+  ro: "ro",
+  bg: "bg",
+  el: "gr", // Flag uses country code 'gr' for Greece
+  hr: "hr",
+  sr: "rs", // Serbia flag code
+  uk: "ua", // Flag uses country code 'ua' for Ukraine
+  zh: "cn", // Flag uses country code 'cn' for China
+  ja: "jp", // Flag uses country code 'jp' for Japan
+  ko: "kr", // Flag uses country code 'kr' for South Korea
+  th: "th",
+  vi: "vn", // Flag uses country code 'vn' for Vietnam
+  id: "id",
+  ms: "my", // Flag uses country code 'my' for Malaysia
+  hi: "in", // Flag uses country code 'in' for India
 };
 
 // Create context with default values
 const LanguageContext = createContext({
   language: "en",
-  setLanguage: () => {},
+  setLanguage: (code: string) => {},
   availableLanguages: AVAILABLE_LANGUAGES,
   isChangingLanguage: false,
 });

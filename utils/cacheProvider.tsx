@@ -116,7 +116,9 @@ const cacheProvider = {
     try {
       // Create a cache key specific to the domain/app
       const cacheKey = `${CACHE_PREFIX}${window.location.hostname || "app"}`;
-      const translations = JSON.parse(localStorage.getItem(cacheKey) || "{}");
+      const translations = JSON.parse(
+        window.localStorage.getItem(cacheKey) || "{}"
+      );
 
       // If key doesn't exist or language doesn't exist, return undefined
       if (!translations[key] || !translations[key][language]) {
@@ -135,7 +137,7 @@ const cacheProvider = {
 
         // Remove expired entry
         delete translations[key][language];
-        localStorage.setItem(cacheKey, JSON.stringify(translations));
+        window.localStorage.setItem(cacheKey, JSON.stringify(translations));
         return undefined;
       }
 
@@ -145,7 +147,7 @@ const cacheProvider = {
 
       // If there's any error with the cache, try to clear it
       try {
-        localStorage.removeItem(
+        window.localStorage.removeItem(
           `${CACHE_PREFIX}${window.location.hostname || "app"}`
         );
       } catch (clearErr) {
@@ -167,7 +169,9 @@ const cacheProvider = {
     try {
       // Create a cache key specific to the domain/app
       const cacheKey = `${CACHE_PREFIX}${window.location.hostname || "app"}`;
-      const translations = JSON.parse(localStorage.getItem(cacheKey) || "{}");
+      const translations = JSON.parse(
+        window.localStorage.getItem(cacheKey) || "{}"
+      );
 
       // Create the key structure if it doesn't exist
       if (!translations[key]) {
@@ -190,7 +194,7 @@ const cacheProvider = {
       }
 
       // Save updated cache
-      localStorage.setItem(cacheKey, JSON.stringify(translations));
+      window.localStorage.setItem(cacheKey, JSON.stringify(translations));
 
       if (process.env.NODE_ENV !== "production") {
         console.log(
@@ -209,7 +213,7 @@ const cacheProvider = {
     try {
       // Get all translation cache keys
       const cacheKey = `${CACHE_PREFIX}${window.location.hostname || "app"}`;
-      localStorage.removeItem(cacheKey);
+      window.localStorage.removeItem(cacheKey);
       console.log("Translation cache cleared");
     } catch (err) {
       console.error("Error clearing translation cache:", err);
@@ -224,7 +228,7 @@ const cacheProvider = {
   getStats: () => {
     try {
       const cacheKey = `${CACHE_PREFIX}${window.location.hostname || "app"}`;
-      const cache = localStorage.getItem(cacheKey);
+      const cache = window.localStorage.getItem(cacheKey);
 
       if (!cache) {
         return {

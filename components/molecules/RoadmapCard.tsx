@@ -1,4 +1,4 @@
-import { Radio } from "../common";
+import { Radio, Translate } from "../common";
 
 type TRoadmapContent = {
   subtitle?: string;
@@ -21,14 +21,14 @@ const RoadmapCard: React.FC<RoadmapCardProps> = ({
       className={`roadmap-card relative bg-opacity-20 space-y-6 p-6 ${className}`}
     >
       <h1 className="text-white font-bold xl:text-4xl lg::text-4xl md:text-4xl text-2xl">
-        {title}
+        <Translate>{title}</Translate>
       </h1>
 
       {contents.map((content, index) => (
         <div key={index} className="w-full space-y-6">
           {content.subtitle && (
             <h2 className="text-white font-semibold xl:text-2xl lg:text-2xl md:text-2xl text-[20px]">
-              {content.subtitle}
+              <Translate>{content.subtitle}</Translate>
             </h2>
           )}
           <div className="w-full space-y-4">

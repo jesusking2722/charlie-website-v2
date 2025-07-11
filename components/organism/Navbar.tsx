@@ -1,13 +1,14 @@
 import Image from "next/image";
 import LogoImage from "@/public/assets/pngs/logo.png";
 import Link from "next/link";
-import { Button } from "../common";
+import { Button, Translate } from "../common";
 import TelegramIcon from "@/public/assets/svgs/telegram-plane.svg";
 import TwitterIcon from "@/public/assets/svgs/twitter.svg";
 import FacebookIcon from "@/public/assets/svgs/facebook.svg";
 import MenuIcon from "@/public/assets/svgs/menu.svg";
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
+import { LanguageDropdown, MobileLangaugeDropdown } from "../molecules";
 
 type TNavItem = {
   label: string;
@@ -108,9 +109,9 @@ const Navbar = () => {
             <li key={index}>
               <Link
                 href={`#${nav.path}`}
-                className="text-white text-2xl font-semibold hover:text-blue-400 transition-colors duration-200"
+                className="text-white text-2xl font-semibold transition-colors duration-200 hover:bg-gradient-to-r hover:from-[#c427e0] hover:via-[#844aff] hover:to-[#12a9ff] hover:bg-clip-text hover:text-transparent"
               >
-                {nav.label}
+                <Translate>{nav.label}</Translate>
               </Link>
             </li>
           ))}
@@ -118,10 +119,14 @@ const Navbar = () => {
       </nav>
 
       {/* Desktop Social Buttons */}
-      <div className="xl:flex lg:flex hidden items-center gap-4">
-        <Button type="icon" icon={TelegramIcon} onClick={handleTelegram} />
-        <Button type="icon" icon={TwitterIcon} onClick={handleTwitter} />
-        <Button type="icon" icon={FacebookIcon} onClick={handleFacebook} />
+      <div className="xl:flex lg:flex hidden items-center gap-6">
+        <div className="flex items-center gap-4">
+          <Button type="icon" icon={TelegramIcon} onClick={handleTelegram} />
+          <Button type="icon" icon={TwitterIcon} onClick={handleTwitter} />
+          <Button type="icon" icon={FacebookIcon} onClick={handleFacebook} />
+        </div>
+
+        <LanguageDropdown />
       </div>
 
       {/* Mobile Menu Button */}
@@ -199,7 +204,7 @@ const Navbar = () => {
                         className="block text-white text-2xl font-semibold hover:text-blue-300 transition-colors duration-200 border-b border-white/20 pb-3"
                         onClick={() => setOpen(false)}
                       >
-                        {nav.label}
+                        <Translate>{nav.label}</Translate>
                       </Link>
                     </motion.li>
                   ))}
@@ -230,6 +235,10 @@ const Navbar = () => {
                       </motion.div>
                     )
                   )}
+                </div>
+
+                <div className="w-full">
+                  <MobileLangaugeDropdown />
                 </div>
 
                 {/* Footer Text */}

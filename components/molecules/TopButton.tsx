@@ -25,6 +25,7 @@ const TopButton = () => {
       top: 0,
       behavior: "smooth",
     });
+    window.history.replaceState(null, "", window.location.pathname);
   };
 
   return (

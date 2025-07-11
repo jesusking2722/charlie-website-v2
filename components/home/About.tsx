@@ -7,6 +7,7 @@ import StylizedGoldenIcon from "@/public/assets/svgs/stylized_golden.svg";
 import MultiChainIcon from "@/public/assets/svgs/multi_chain.svg";
 import DateIcon from "@/public/assets/svgs/date.svg";
 import CombiningTwoIcon from "@/public/assets/svgs/combining_two.svg";
+import { Translate } from "../common";
 
 const About = () => {
   const cards: ICard[] = [
@@ -73,7 +74,9 @@ const About = () => {
             ))}
           </div>
 
-          <h1 className="text-white font-black text-7xl">Our Achievements</h1>
+          <h1 className="text-white font-black text-7xl">
+            <Translate>Our Achievements</Translate>
+          </h1>
 
           <div className="w-full relative flex justify-between">
             {cards.slice(3, 6).map((card, index) => (
@@ -88,7 +91,9 @@ const About = () => {
       </div>
 
       <div className="xl:hidden lg:hidden w-[90%] mx-auto flex flex-col items-center gap-6">
-        <h1 className="text-white font-black text-4xl">Our Achievements</h1>
+        <h1 className="text-white font-black text-4xl">
+          <Translate>Our Achievements</Translate>
+        </h1>
         <div className="space-y-4 w-full">
           {cards.map((card, index) => (
             <Card key={index} {...card} />

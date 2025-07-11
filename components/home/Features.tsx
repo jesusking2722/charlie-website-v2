@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { ICard } from "../common/Card";
-import { Button, Card, Radio } from "../common";
+import { Button, Card, Radio, Translate } from "../common";
 import PowerCharlieImage from "@/public/assets/pngs/power_charlie.png";
 import InvestCharlieImage from "@/public/assets/pngs/invest_charlie.png";
 import JoinRevolutionImage from "@/public/assets/pngs/join_revolution.png";
@@ -89,7 +89,7 @@ const Features = () => {
         <div className="w-full xl:grid xl:grid-cols-3 lg:grid lg:grid-cols-3 flex flex-col xl:gap-14 lg:gap-14 gap-6">
           <div className="">
             <h1 className="text-white font-black xl:text-7xl lg:text-5xl text-4xl">
-              Our Future Builds
+              <Translate>Our Future Builds</Translate>
             </h1>
           </div>
 
@@ -109,22 +109,27 @@ const Features = () => {
           <div className="xl:w-1/2 lg:w-1/2 w-full flex flex-col items-start gap-8">
             {/* Title */}
             <h1 className="text-white font-black xl:text-7xl lg:text-7xl text-4xl">
-              The Power of Charlie (CHRLE)
+              <Translate>The Power of Charlie</Translate> (CHRLE)
             </h1>
 
             {/* Description */}
             <div className="space-y-3">
               <p className="text-[#E0E0E0] xl:text-[20px] lg:text-[20px] md:text-[20px] text-[16px]">
-                Every component in our ecosystem strengthens our Charlie Token
-                (CHRLE). Through an innovative 20% automatic buy-and-burn
-                mechanism on all payments (subscriptions, purchases, marketplace
-                activity, game spending, and more), CHRLE supply is constantly
-                reduced — driving scarcity, value, and investor rewards.
+                <Translate>
+                  Every component in our ecosystem strengthens our Charlie Token
+                  (CHRLE). Through an innovative 20% automatic buy-and-burn
+                  mechanism on all payments (subscriptions, purchases,
+                  marketplace activity, game spending, and more), CHRLE supply
+                  is constantly reduced — driving scarcity, value, and investor
+                  rewards.
+                </Translate>
               </p>
               <p className="text-[#E0E0E0] xl:text-[20px] lg:text-[20px] md:text-[20px] text-[16px]">
-                With hundreds of thousands of users expected across our
-                platforms, this relentless burning process guarantees a
-                continuously rising token floor.
+                <Translate>
+                  With hundreds of thousands of users expected across our
+                  platforms, this relentless burning process guarantees a
+                  continuously rising token floor.
+                </Translate>
               </p>
             </div>
 
@@ -132,7 +137,7 @@ const Features = () => {
             <div className="w-[80%] space-y-4">
               {/* Title */}
               <h2 className="text-white xl:text-[20px] lg:text-[20px] md:text-[20px] text-[16px] font-semibold">
-                Our philosophy is simple:
+                <Translate>Our philosophy is simple:</Translate>
               </h2>
 
               {/* Radio Group */}
@@ -169,9 +174,11 @@ const Features = () => {
             </div>
 
             <p className="text-[#E0E0E0] xl:text-[20px] lg:text-[20px] md:text-[20px] text-[16px]">
-              We are not just another project. We are an unstoppable force,
-              combining technology, utility, and visionary leadership to reshape
-              Web3 forever.
+              <Translate>
+                We are not just another project. We are an unstoppable force,
+                combining technology, utility, and visionary leadership to
+                reshape Web3 forever.
+              </Translate>
             </p>
           </div>
           <Image
@@ -192,7 +199,7 @@ const Features = () => {
           <div className="xl:w-1/2 lg:w-1/2 w-full flex flex-col items-start gap-8">
             {/* Title */}
             <h1 className="text-white font-black xl:text-7xl lg:text-7xl text-4xl">
-              Why Invest in Charlie Unicorn AI?
+              <Translate>Why Invest in Charlie Unicorn AI?</Translate>
             </h1>
 
             {/* Radio Group */}
@@ -235,12 +242,17 @@ const Features = () => {
             </div>
 
             <p className="text-[#E0E0E0] xl:text-[20px] lg:text-[20px] md:text-[20px] text-[16px]">
-              Charlie Unicorn AI isn't following trends — We are setting them.
+              <Translate>
+                Charlie Unicorn AI isn't following trends — We are setting them.
+              </Translate>
               <br />
               <br />
-              If you're looking for a project that delivers, a team that
-              executes relentlessly, and a vision that transcends the ordinary,
-              Charlie Unicorn AI is your once-in-a-lifetime opportunity.
+              <Translate>
+                If you're looking for a project that delivers, a team that
+                executes relentlessly, and a vision that transcends the
+                ordinary, Charlie Unicorn AI is your once-in-a-lifetime
+                opportunity.
+              </Translate>
             </p>
           </div>
 
@@ -268,9 +280,9 @@ const Features = () => {
           <div className="absolute bottom-24 w-full">
             <div className="w-[90%] mx-auto space-y-8">
               <h1 className="text-white font-medium xl:text-[42px] lg:text-[42px] md:text-[42px] text-[32px]">
-                Join the Revolution.
+                <Translate>Join the Revolution.</Translate>
                 <br />
-                Be Part of the Unicorn Legacy.
+                <Translate>Be Part of the Unicorn Legacy.</Translate>
               </h1>
 
               <div className="w-full xl:flex lg:flex hidden items-center gap-6">
@@ -325,9 +337,9 @@ const Features = () => {
         <div className="absolute md:bottom-24 bottom-6 w-full">
           <div className="w-[90%] mx-auto space-y-8">
             <h1 className="text-white font-medium xl:text-[42px] lg:text-[42px] md:text-[42px] text-[32px]">
-              Join the Revolution.
+              <Translate>Join the Revolution.</Translate>
               <br />
-              Be Part of the Unicorn Legacy.
+              <Translate>Be Part of the Unicorn Legacy.</Translate>
             </h1>
 
             <div className="w-full xl:flex lg:flex hidden items-center gap-6">

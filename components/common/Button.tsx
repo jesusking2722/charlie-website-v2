@@ -1,5 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 import { Icon } from "@iconify/react";
+import Translate from "./Translate";
 
 interface ButtonProps {
   type:
@@ -31,11 +32,11 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
   if (type === "icon" && icon) {
     return (
-      <div
-        className="relative w-10 h-10 bg-primary-gradient rounded-md transition-all duration-300 hover:shadow-[0_0_8px_rgba(196,39,224,0.7),0_0_12px_rgba(132,74,255,0.5),0_0_16px_rgba(18,169,255,0.3)]"
-        onClick={onClick}
-      >
-        <button className="absolute inset-[1px] flex items-center justify-center bg-[#1A062A] rounded-md p-1 cursor-pointer">
+      <div className="relative w-10 h-10 bg-primary-gradient rounded-md transition-all duration-300 hover:shadow-[0_0_8px_rgba(196,39,224,0.7),0_0_12px_rgba(132,74,255,0.5),0_0_16px_rgba(18,169,255,0.3)]">
+        <button
+          className="absolute inset-[1px] flex items-center justify-center bg-[#1A062A] rounded-md p-1 cursor-pointer"
+          onClick={onClick}
+        >
           <Image src={icon} alt="Icon" className="w-9 h-9" />
         </button>
       </div>
@@ -70,7 +71,7 @@ const Button: React.FC<ButtonProps> = ({
         disabled={loading}
         onClick={onClick}
       >
-        {label}
+        <Translate>{label}</Translate>
         {icon && !loading && (
           <Image src={icon} alt="Icon" className={`w-5 h-5 ${iconClassName}`} />
         )}
@@ -135,7 +136,7 @@ const Button: React.FC<ButtonProps> = ({
             className="font-semibold text-lg bg-gradient-to-r from-[#c427e0] via-[#844aff] to-[#12a9ff]
       bg-clip-text text-transparent"
           >
-            {label}
+            <Translate>{label}</Translate>
           </span>
           {icon && <Image src={icon} alt="Icon" className="w-5 h-5" />}
         </button>
@@ -156,7 +157,7 @@ const Button: React.FC<ButtonProps> = ({
           onClick={onClick}
         >
           <span className="font-semibold text-white text-[28px] transition-all duration-200">
-            {label}
+            <Translate>{label}</Translate>
           </span>
           {icon && <Image src={icon} alt="Icon" className="w-5 h-5" />}
         </button>
@@ -181,7 +182,7 @@ const Button: React.FC<ButtonProps> = ({
         onClick={onClick}
       >
         <span className="relative z-10 font-semibold text-lg bg-gradient-to-r from-[#ffa8d1] via-[#c3b1ff] to-[#aee2ff] bg-clip-text text-transparent">
-          {label}
+          <Translate>{label}</Translate>
         </span>
         {icon && (
           <Image src={icon} alt="Icon" className="relative z-10 w-5 h-5" />

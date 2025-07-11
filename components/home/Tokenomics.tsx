@@ -7,6 +7,7 @@ import LegendNodeTeamIcon from "@/public/assets/svgs/legent_node_team.svg";
 import LegendNodeReverseIcon from "@/public/assets/svgs/legend_node_reverse.svg";
 import LegendNodeLiquidityIcon from "@/public/assets/svgs/legend_node_liquidity.svg";
 import LegendNodePresaleIcon from "@/public/assets/svgs/legend_node_presale.svg";
+import { Translate } from "../common";
 
 const Tokenomics = () => {
   return (
@@ -14,7 +15,7 @@ const Tokenomics = () => {
       <div className="xl:w-[80%] lg:w-[80%] w-[95%] mx-auto flex xl:flex-row lg:flex-row flex-col items-center justify-center xl:gap-14 lg:gap-14 gap-0">
         <div className="xl:w-1/3 lg:w-1/3 w-full flex flex-col items-center gap-8">
           <h1 className="text-white font-black xl:text-7xl lg:text-7xl text-4xl">
-            Tokenomics
+            <Translate>Tokenomics</Translate>
           </h1>
           <div
             className="w-full h-[190px] relative  bg-gradient-to-r
@@ -24,10 +25,10 @@ const Tokenomics = () => {
           >
             <div className="absolute inset-[1px] bg-[#220937] rounded-xl flex flex-col items-center justify-center gap-6">
               <h2 className="text-[#E0E0E0] font-bold xl:text-4xl lg:text-4xl text-2xl">
-                Token
+                <Translate>Token</Translate>
               </h2>
               <span className="text-primary-gradient font-bold xl:text-6xl lg:text-6xl text-[32px]">
-                100 Billion
+                <Translate>100 Billion</Translate>
               </span>
             </div>
           </div>
@@ -54,7 +55,7 @@ const Tokenomics = () => {
                 className="w-5 h-5"
               />
               <span className="text-white font-semibold xl:text-[20px] lg:text-[20px] md:text-[20px] text-[14px]">
-                Staking & Airdrops 15%
+                <Translate>Staking & Airdrops 15%</Translate>
               </span>
             </div>
             <div className="flex items-center gap-2">
@@ -64,7 +65,7 @@ const Tokenomics = () => {
                 className="w-5 h-5"
               />
               <span className="text-white font-semibold xl:text-[20px] lg:text-[20px] md:text-[20px] text-[14px]">
-                Team 5%
+                <Translate>Team 5%</Translate>
               </span>
             </div>
             <div className="flex items-center gap-2">
@@ -74,7 +75,7 @@ const Tokenomics = () => {
                 className="w-5 h-5"
               />
               <span className="text-white font-semibold xl:text-[20px] lg:text-[20px] md:text-[20px] text-[14px]">
-                Strategic Reserve 5%
+                <Translate>Strategic Reserve 5%</Translate>
               </span>
             </div>
             <div className="flex items-center gap-2">
@@ -84,7 +85,7 @@ const Tokenomics = () => {
                 className="w-5 h-5"
               />
               <span className="text-white font-semibold xl:text-[20px] lg:text-[20px] md:text-[20px] text-[14px]">
-                Liquidity 15%
+                <Translate>Liquidity 15%</Translate>
               </span>
             </div>
             <div className="flex items-center gap-2">
@@ -94,7 +95,7 @@ const Tokenomics = () => {
                 className="w-5 h-5"
               />
               <span className="text-white font-semibold xl:text-[20px] lg:text-[20px] md:text-[20px] text-[14px]">
-                Presale 60%
+                <Translate>Presale 60%</Translate>
               </span>
             </div>
           </div>

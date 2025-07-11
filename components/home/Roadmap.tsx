@@ -1,6 +1,7 @@
 import BackgroundImage from "@/public/assets/pngs/roadmap_bg.png";
 import Image from "next/image";
 import { RoadmapCard } from "../molecules";
+import { Translate } from "../common";
 
 const Roadmap = () => {
   return (
@@ -14,7 +15,7 @@ const Roadmap = () => {
       <div className="absolute inset-0 xl:flex lg:flex hidden flex-col items-center justify-center">
         <div className="w-[80%] mx-auto space-y-14">
           <h1 className="text-white font-black text-7xl text-center">
-            Road Map
+            <Translate>Road Map</Translate>
           </h1>
 
           {/* Roadmap card group */}
@@ -131,7 +132,7 @@ const Roadmap = () => {
 
       <div className="w-[95%] mx-auto xl:hidden lg:hidden flex flex-col items-center gap-6">
         <h1 className="text-white font-black xl:text-7xl lg:text-7xl text-4xl text-center">
-          Road Map
+          <Translate>Road Map</Translate>
         </h1>
 
         <div className="w-full flex flex-col gap-6">

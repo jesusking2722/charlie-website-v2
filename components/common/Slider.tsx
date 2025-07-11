@@ -3,6 +3,7 @@ import { IRadio } from "./Radio";
 import { useState, useEffect } from "react";
 import { RadioGroup } from "../molecules";
 import { motion, AnimatePresence } from "motion/react";
+import Translate from "./Translate";
 
 export interface ISlide {
   img: StaticImageData;
@@ -164,7 +165,7 @@ const Slider: React.FC<SliderProps> = ({ slides }) => {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.2 }}
                     >
-                      {visibleSlides[0].title}
+                      <Translate>{visibleSlides[0].title}</Translate>
                     </motion.h1>
                     <motion.p
                       className="text-[#E0E0E0] text-[18px] sm:text-[20px] leading-relaxed"
@@ -172,7 +173,7 @@ const Slider: React.FC<SliderProps> = ({ slides }) => {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.3 }}
                     >
-                      {visibleSlides[0].description}
+                      <Translate>{visibleSlides[0].description}</Translate>
                     </motion.p>
                   </div>
                   <div className="absolute h-2 bg-primary-gradient rounded-b-3xl left-0 right-0 bottom-0"></div>
@@ -213,10 +214,10 @@ const Slider: React.FC<SliderProps> = ({ slides }) => {
                   </div>
                   <div className="p-6 space-y-4">
                     <h1 className="text-white font-bold text-[32px] xl:text-[42px] leading-tight">
-                      {slide.title}
+                      <Translate>{slide.title}</Translate>
                     </h1>
                     <p className="text-[#E0E0E0] text-[18px] xl:text-[20px] leading-relaxed">
-                      {slide.description}
+                      <Translate>{slide.description}</Translate>
                     </p>
                   </div>
                   <motion.div
