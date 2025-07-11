@@ -17,7 +17,7 @@ const Marketing = () => {
     {
       title: "Claim and Stake Your Charlie Tokens during the Presale!",
       description:
-        "Unlock the full potential of your Charlie tokens through staking! It's a simple, effective, and rewarding process. By staking your Charlie tokens, you actively contribute to the growth of the Charlie ecosystem. Stake your 'CHRLE' tokens to earn competitive APYs in 'CHRLE,' along with an additional governance token.",
+        "Unlock the full potential of your Charlie tokens through staking! It's a simple, effective, and rewarding process. Claim your $CHRLE tokens right after your purchase! Stake them for juicy APY and extra gains. Add to your wallet: 0xb9c337151178cf0ec9a6b13a121c661065a80f36. Let’s grow together!",
     },
     {
       title: "Charlie Blockchain",
