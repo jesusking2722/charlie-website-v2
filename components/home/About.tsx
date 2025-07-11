@@ -23,14 +23,14 @@ const About = () => {
       title: "Charlie Party App Store",
       description:
         "Development completed. A fully functional, user-friendly iOS app bridging real-world events with blockchain innovation.",
-      path: "https://apps.apple.com/pl/app/charlie-party/id6746444288",
+      // path: "https://apps.apple.com/pl/app/charlie-party/id6746444288",
     },
     {
       icon: EventUpIcon,
       title: "Charlie Party Google Play",
       description:
         "Development completed. A fully functional, user-friendly Android app bridging real-world events with blockchain innovation.",
-      path: "https://play.google.com/store/apps/details?id=com.charlieunicornai.charlieparty",
+      // path: "https://play.google.com/store/apps/details?id=com.charlieunicornai.charlieparty",
     },
     {
       icon: NFTMaIcon,

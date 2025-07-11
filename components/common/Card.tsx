@@ -1,6 +1,8 @@
 import Image, { StaticImageData } from "next/image";
 import Translate from "./Translate";
 import Link from "next/link";
+import AppStoreImage from "@/public/assets/svgs/app_store.svg";
+import GooglePlayImage from "@/public/assets/svgs/google_play.svg";
 
 export interface ICard {
   icon: StaticImageData;
@@ -26,6 +28,20 @@ const Card: React.FC<ICard> = ({
   const bgOpacityClass = opacity
     ? `bg-[rgba(40,12,63,${opacity})]`
     : "bg-[rgba(40,12,63,0.4)]";
+
+  const handleGooglePlay = () => {
+    window.open(
+      "https://play.google.com/store/apps/details?id=com.charlieunicornai.charlieparty",
+      "_blank"
+    );
+  };
+
+  const handleAppStore = () => {
+    window.open(
+      "https://apps.apple.com/pl/app/charlie-party/id6746444288",
+      "_blank"
+    );
+  };
 
   return (
     <div className={className}>
@@ -75,7 +91,34 @@ const Card: React.FC<ICard> = ({
                 gap ? gap : "gap-4"
               } xl:p-6 lg:p-6 md:p-6 p-4 overflow-hidden`}
             >
-              <Image src={icon} alt={title} className="w-[104px] h-[104px]" />
+              <div className="w-full flex items-center justify-between">
+                <Image src={icon} alt={title} className="w-[104px] h-[104px]" />
+                {title.includes("App Store") && (
+                  <button
+                    className="cursor-pointer hover:scale-105 transition-all duration-200"
+                    onClick={handleAppStore}
+                  >
+                    <Image
+                      src={AppStoreImage}
+                      alt="App store"
+                      className="w-[120px] h-auto object-cover"
+                    />
+                  </button>
+                )}
+
+                {title.includes("Google Play") && (
+                  <button
+                    className="cursor-pointer hover:scale-105 transition-all duration-200"
+                    onClick={handleGooglePlay}
+                  >
+                    <Image
+                      src={GooglePlayImage}
+                      alt="Google play"
+                      className="w-[120px] h-auto object-cover"
+                    />
+                  </button>
+                )}
+              </div>
 
               <h1 className="text-white font-bold xl:text-[32px] lg:text-[32px] md:text-[32px] text-2xl">
                 <Translate>{title}</Translate>
