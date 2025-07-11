@@ -60,68 +60,128 @@ const Contact = () => {
   }, [state.succeeded]);
 
   return (
-    <section id="contact" className="w-full relative">
+    <section
+      id="contact"
+      className="w-full relative overflow-hidden xl:mb-0 lg:mb-0 mb-14"
+    >
       <Image
         src={BackgroundImage}
         alt="Contact Background"
-        className="w-full h-auto"
+        className="w-full h-auto xl:flex lg:flex hidden"
       />
 
-      <div className="absolute inset-0 flex flex-col items-center justify-center">
-        <div className="w-[80%] mx-auto flex items-center justify-between gap-14">
-          <div className="w-2/5">
-            <Image
-              src={ContactImage}
-              alt="Contact"
-              className="w-full h-auto object-cover"
-            />
-          </div>
-
-          <div className="w-3/5">
-            <form className="w-full space-y-8" onSubmit={handleFormSubmit}>
-              <div className="space-y-1">
-                <div className="relative w-full h-16 bg-gradient-to-r from-[#c427e0]/50 via-[#844aff]/50 to-[#12a9ff]/50 rounded-lg">
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="anthonyhopkins@gmail.com"
-                    className="absolute inset-[1px] bg-[rgba(40,12,63,0.6)] rounded-lg text-white placeholder:text-[#BDBDBD] text-[20px] py-2 px-4 border-none outline-none"
-                  />
-                </div>
-
-                {isInvalidEmail && (
-                  <p className="text-red-500 text-sm font-semibold px-1">
-                    Wrong email format
-                  </p>
-                )}
-              </div>
-
-              <div className="space-y-1">
-                <div className="relative w-full h-[225px] bg-gradient-to-r from-[#c427e0]/50 via-[#844aff]/50 to-[#12a9ff]/50 rounded-lg">
-                  <textarea
-                    name="message"
-                    placeholder="What is your opinion"
-                    className="absolute inset-[1px] bg-[rgba(40,12,63,0.6)] rounded-lg text-white placeholder:text-[#BDBDBD] text-[20px] py-2 px-4 border-none outline-none resize-none overflow-x-hidden overflow-y-auto"
-                  />
-                </div>
-
-                {isInvalidMessage && (
-                  <p className="text-red-500 text-sm font-semibold px-1">
-                    Message is required
-                  </p>
-                )}
-              </div>
-
-              <Button
-                type="primary"
-                label="Submit"
-                icon={ArrowRightIcon}
-                loading={loading}
-                hovered={true}
+      <div className="absolute inset-0 xl:flex lg:flex hidden flex-col items-center justify-center">
+        <div className="w-[80%] mx-auto space-y-14">
+          <h1 className="text-white font-black text-7xl text-center">
+            Contact Us
+          </h1>
+          <div className="w-full flex items-center justify-between gap-14">
+            <div className="w-2/5">
+              <Image
+                src={ContactImage}
+                alt="Contact"
+                className="w-full h-auto object-cover"
               />
-            </form>
+            </div>
+
+            <div className="w-3/5">
+              <form className="w-full space-y-8" onSubmit={handleFormSubmit}>
+                <div className="space-y-1">
+                  <div className="relative w-full h-16 bg-gradient-to-r from-[#c427e0]/50 via-[#844aff]/50 to-[#12a9ff]/50 rounded-lg">
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="anthonyhopkins@gmail.com"
+                      className="absolute inset-[1px] bg-[rgba(40,12,63,0.6)] rounded-lg text-white placeholder:text-[#BDBDBD] text-[20px] py-2 px-4 border-none outline-none"
+                    />
+                  </div>
+
+                  {isInvalidEmail && (
+                    <p className="text-red-500 text-sm font-semibold px-1">
+                      Wrong email format
+                    </p>
+                  )}
+                </div>
+
+                <div className="space-y-1">
+                  <div className="relative w-full h-[225px] bg-gradient-to-r from-[#c427e0]/50 via-[#844aff]/50 to-[#12a9ff]/50 rounded-lg">
+                    <textarea
+                      name="message"
+                      placeholder="What is your opinion"
+                      className="absolute inset-[1px] bg-[rgba(40,12,63,0.6)] rounded-lg text-white placeholder:text-[#BDBDBD] text-[20px] py-2 px-4 border-none outline-none resize-none overflow-x-hidden overflow-y-auto"
+                    />
+                  </div>
+
+                  {isInvalidMessage && (
+                    <p className="text-red-500 text-sm font-semibold px-1">
+                      Message is required
+                    </p>
+                  )}
+                </div>
+
+                <Button
+                  type="primary"
+                  label="Submit"
+                  icon={ArrowRightIcon}
+                  loading={loading}
+                  hovered={true}
+                />
+              </form>
+            </div>
           </div>
         </div>
+      </div>
+
+      <div className="xl:hidden lg:hidden flex w-[95%] mx-auto flex-col gap-6">
+        <h1 className="text-white font-black text-4xl text-left">Contact Us</h1>
+        <Image
+          src={ContactImage}
+          alt="Contact"
+          className="w-full h-auto object-cover"
+        />
+        <form className="w-full space-y-6" onSubmit={handleFormSubmit}>
+          <div className="space-y-1">
+            <div className="relative w-full h-16 bg-gradient-to-r from-[#c427e0]/50 via-[#844aff]/50 to-[#12a9ff]/50 rounded-lg">
+              <input
+                type="email"
+                name="email"
+                placeholder="anthonyhopkins@gmail.com"
+                className="absolute inset-[1px] bg-[rgba(40,12,63,0.6)] rounded-lg text-white placeholder:text-[#BDBDBD] text-[20px] py-2 px-4 border-none outline-none"
+              />
+            </div>
+
+            {isInvalidEmail && (
+              <p className="text-red-500 text-sm font-semibold px-1">
+                Wrong email format
+              </p>
+            )}
+          </div>
+
+          <div className="space-y-1">
+            <div className="relative w-full h-[225px] bg-gradient-to-r from-[#c427e0]/50 via-[#844aff]/50 to-[#12a9ff]/50 rounded-lg">
+              <textarea
+                name="message"
+                placeholder="What is your opinion"
+                className="absolute inset-[1px] bg-[rgba(40,12,63,0.6)] rounded-lg text-white placeholder:text-[#BDBDBD] text-[20px] py-2 px-4 border-none outline-none resize-none overflow-x-hidden overflow-y-auto"
+              />
+            </div>
+
+            {isInvalidMessage && (
+              <p className="text-red-500 text-sm font-semibold px-1">
+                Message is required
+              </p>
+            )}
+          </div>
+
+          <Button
+            type="primary"
+            label="Submit"
+            icon={ArrowRightIcon}
+            loading={loading}
+            hovered={true}
+            width="full"
+          />
+        </form>
       </div>
     </section>
   );

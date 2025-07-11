@@ -20,12 +20,14 @@ const RoadmapCard: React.FC<RoadmapCardProps> = ({
     <div
       className={`roadmap-card relative bg-opacity-20 space-y-6 p-6 ${className}`}
     >
-      <h1 className="text-white font-bold text-4xl">{title}</h1>
+      <h1 className="text-white font-bold xl:text-4xl lg::text-4xl md:text-4xl text-2xl">
+        {title}
+      </h1>
 
       {contents.map((content, index) => (
         <div key={index} className="w-full space-y-6">
           {content.subtitle && (
-            <h2 className="text-white font-semibold text-2xl">
+            <h2 className="text-white font-semibold xl:text-2xl lg:text-2xl md:text-2xl text-[20px]">
               {content.subtitle}
             </h2>
           )}

@@ -12,10 +12,10 @@ const FlowingLogos: React.FC<FlowingLogosProps> = ({ labels }) => {
         {labels.map((label, index) => (
           <div
             key={index}
-            className="relative flex items-center justify-center px-20 h-[74px] border-primary-gradient"
+            className="relative flex items-center justify-center px-20 xl:h-[74px] lg:h-[74px] md:h-[74px] h-[51px] border-primary-gradient"
           >
             {/* Text stays in one line and uses gradient */}
-            <span className="text-primary-gradient text-[28px] font-semibold whitespace-nowrap">
+            <span className="text-primary-gradient xl:text-[28px] lg:text-[28px] md:text-[28px] text-[20px] font-semibold whitespace-nowrap">
               {label.toUpperCase()}
             </span>
 
@@ -23,7 +23,7 @@ const FlowingLogos: React.FC<FlowingLogosProps> = ({ labels }) => {
             <Image
               src={LogoImage}
               alt="Logo"
-              className="absolute w-[91px] h-[100px] object-cover -left-6 -top-4"
+              className="absolute xl:w-[91px] xl:h-[100px] lg:w-[91px] lg:h-[100px] md:w-[91px] md:h-[100px] w-[64px] h-[70px] object-cover xl:-left-6 xl:-top-4 lg:-left-6 lg:-top-4 md:-left-6 md:-top-4 -left-6 -top-3"
             />
           </div>
         ))}

@@ -6,15 +6,15 @@ import { Radio } from "../common";
 const ServiceIntro = () => {
   return (
     <section className="w-full">
-      <div className="w-[80%] mx-auto">
+      <div className="xl:w-[80%] lg:w-[80%] w-[95%] mx-auto xl:space-y-0 lg:space-y-0 space-y-14">
         {/* Airdroid & Giveaways */}
-        <div className="w-full flex items-center gap-14 rounded-2xl bg-[#280C3F] p-10">
-          <div className="w-2/3 space-y-14">
-            <h1 className="text-white font-black text-7xl">
+        <div className="w-full flex xl:flex-row lg:flex-row flex-col items-center xl:gap-14 lg:gap-14 gap-6 rounded-2xl bg-[#280C3F] xl:p-10 lg:p-10 md:p-10 p-6">
+          <div className="xl:w-2/3 lg:w-2/3 w-full xl:space-y-14 lg:space-y-14 space-y-6">
+            <h1 className="text-white font-black xl:text-7xl lg:text-7xl text-4xl">
               <strong className="text-primary-gradient">$500,000</strong> in
               Airdrops and Giveaways
             </h1>
-            <p className="text-[#E0E0E0] text-[20px]">
+            <p className="text-[#E0E0E0] xl:text-[20px] lg:text-[20px] md:text-[20px] text-[16px]">
               We are thrilled to dedicate $500,000 to airdrops and giveaways as
               part of our mission to reward and engage our community. Over the
               next 30 months (2.5 years), expect regular airdrops and
@@ -25,28 +25,34 @@ const ServiceIntro = () => {
           <Image
             src={AirdropImage}
             alt="Airdrop & Giveaways"
-            className="w-1/3 h-auto object-cover"
+            className="xl:w-1/3 lg:w-1/3 w-full h-auto object-cover"
           />
         </div>
-        <div className="w-[80%] mx-auto flex items-center justify-between">
+
+        {/* Divider */}
+        <div className="w-[80%] mx-auto xl:flex lg:flex hidden items-center justify-between">
           <div className="w-[42px] h-[42px] bg-[#280C3F]"></div>
           <div className="w-[42px] h-[42px] bg-[#280C3F]"></div>
         </div>
-        <div className="w-full flex items-center gap-14 rounded-2xl bg-[#280C3F] p-10">
+
+        {/* Heavy marketing */}
+        <div className="w-full flex xl:flex-row lg:flex-row flex-col items-center xl:gap-14 lg:gap-14 gap-6 rounded-2xl bg-[#280C3F] xl:p-10 lg:p-10 md:p-10 p-6">
           <Image
             src={HeavyMarketingImage}
             alt="Heavy Marketing"
-            className="w-1/3 h-auto object-cover"
+            className="w-1/3 xl:flex lg:flex hidden h-auto object-cover"
           />
 
-          <div className="w-2/3 space-y-8">
-            <h1 className="text-white font-black text-7xl">Heavy Marketing</h1>
-            <p className="text-[#E0E0E0] text-[20px]">
+          <div className="xl:w-2/3 lg:w-2/3 w-full xl:space-y-8 lg:space-y-8 space-y-6">
+            <h1 className="text-white font-black xl:text-7xl lg:text-7xl text-4xl">
+              Heavy Marketing
+            </h1>
+            <p className="text-[#E0E0E0] xl:text-[20px] lg:text-[20px] md:text-[20px] text-[16px]">
               To ensure the long-term success of our project, we've allocated a
               massive $1,000,000 to marketing. Our strategy includes:
             </p>
 
-            <div className="w-full space-y-6">
+            <div className="w-full xl:space-y-6 lg:space-y-6 space-y-4">
               <Radio
                 name=""
                 label="Influencer partnerships to boost visibility."
@@ -84,6 +90,12 @@ const ServiceIntro = () => {
               />
             </div>
           </div>
+
+          <Image
+            src={HeavyMarketingImage}
+            alt="Heavy Marketing"
+            className="w-full xl:hidden lg:hidden flex h-auto object-cover"
+          />
         </div>
       </div>
     </section>

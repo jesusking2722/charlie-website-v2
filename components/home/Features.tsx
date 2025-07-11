@@ -4,6 +4,7 @@ import { Button, Card, Radio } from "../common";
 import PowerCharlieImage from "@/public/assets/pngs/power_charlie.png";
 import InvestCharlieImage from "@/public/assets/pngs/invest_charlie.png";
 import JoinRevolutionImage from "@/public/assets/pngs/join_revolution.png";
+import MobileJoinRevolutionImage from "@/public/assets/pngs/mobile_join_revolution.png";
 import DexIcon from "@/public/assets/svgs/dex.svg";
 import FuturisticIcon from "@/public/assets/svgs/futuristic.svg";
 import CrossBridgeIcon from "@/public/assets/svgs/cross_bridge.svg";
@@ -71,17 +72,16 @@ const Features = () => {
   ];
 
   return (
-    <section id="features" className="w-full space-y-28">
-      <div className="w-[80%] mx-auto space-y-32">
+    <section
+      id="features"
+      className="w-full xl:space-y-28 lg:space-y-28 md:space-y-28 space-y-14"
+    >
+      <div className="xl:w-[80%] lg:w-[80%] w-[90%] mx-auto space-y-32">
         {/* Features */}
-        <div className="w-full grid grid-cols-3 gap-14">
+        <div className="w-full xl:grid xl:grid-cols-3 lg:grid lg:grid-cols-3 flex flex-col xl:gap-14 lg:gap-14 gap-6">
           <div className="">
-            <h1 className="text-white font-black text-7xl">
-              Our
-              <br />
-              Future
-              <br />
-              Builds
+            <h1 className="text-white font-black xl:text-7xl lg:text-5xl text-4xl">
+              Our Future Builds
             </h1>
           </div>
 
@@ -97,23 +97,23 @@ const Features = () => {
         </div>
 
         {/* Power of Charlie */}
-        <div className="w-full flex items-center justify-between gap-14">
-          <div className="w-1/2 flex flex-col items-start gap-8">
+        <div className="w-full flex xl:flex-row lg:flex-row flex-col items-center xl:justify-between lg:justify-between gap-14">
+          <div className="xl:w-1/2 lg:w-1/2 w-full flex flex-col items-start gap-8">
             {/* Title */}
-            <h1 className="text-white font-black text-7xl">
+            <h1 className="text-white font-black xl:text-7xl lg:text-7xl text-4xl">
               The Power of Charlie (CHRLE)
             </h1>
 
             {/* Description */}
             <div className="space-y-3">
-              <p className="text-[#E0E0E0] text-[20px]">
+              <p className="text-[#E0E0E0] xl:text-[20px] lg:text-[20px] md:text-[20px] text-[16px]">
                 Every component in our ecosystem strengthens our Charlie Token
                 (CHRLE). Through an innovative 20% automatic buy-and-burn
                 mechanism on all payments (subscriptions, purchases, marketplace
                 activity, game spending, and more), CHRLE supply is constantly
                 reduced — driving scarcity, value, and investor rewards.
               </p>
-              <p className="text-[#E0E0E0] text-[20px]">
+              <p className="text-[#E0E0E0] xl:text-[20px] lg:text-[20px] md:text-[20px] text-[16px]">
                 With hundreds of thousands of users expected across our
                 platforms, this relentless burning process guarantees a
                 continuously rising token floor.
@@ -123,12 +123,12 @@ const Features = () => {
             {/* Title & Radio Group */}
             <div className="w-[80%] space-y-4">
               {/* Title */}
-              <h2 className="text-white text-[20px] font-semibold">
+              <h2 className="text-white xl:text-[20px] lg:text-[20px] md:text-[20px] text-[16px] font-semibold">
                 Our philosophy is simple:
               </h2>
 
               {/* Radio Group */}
-              <div className="w-full grid grid-cols-2 gap-4">
+              <div className="w-full xl:grid xl:grid-cols-2 lg:grid lg:grid-cols-2 flex flex-col gap-4">
                 <Radio
                   label="More users"
                   name="moreUsers"
@@ -160,7 +160,7 @@ const Features = () => {
               </div>
             </div>
 
-            <p className="text-[#E0E0E0] text-[20px]">
+            <p className="text-[#E0E0E0] xl:text-[20px] lg:text-[20px] md:text-[20px] text-[16px]">
               We are not just another project. We are an unstoppable force,
               combining technology, utility, and visionary leadership to reshape
               Web3 forever.
@@ -169,20 +169,21 @@ const Features = () => {
           <Image
             src={PowerCharlieImage}
             alt="Power of Charlie"
-            className="w-1/2 h-auto object-cover"
+            className="xl:w-1/2 lg:w-1/2 w-full h-auto object-cover"
           />
         </div>
 
         {/* Invest Charlie */}
-        <div className="w-full flex items-center justify-between gap-14">
+        <div className="w-full flex xl:flex-row lg:flex-row flex-col items-center justify-between xl:gap-14 lg:gap-14 gap-6">
           <Image
             src={InvestCharlieImage}
             alt="Power of Charlie"
-            className="w-1/2 h-auto object-cover"
+            className="w-1/2 xl:flex lg:flex hidden h-auto object-cover"
           />
-          <div className="w-1/2 flex flex-col items-start gap-8">
+
+          <div className="xl:w-1/2 lg:w-1/2 w-full flex flex-col items-start gap-8">
             {/* Title */}
-            <h1 className="text-white font-black text-7xl">
+            <h1 className="text-white font-black xl:text-7xl lg:text-7xl text-4xl">
               Why Invest in Charlie Unicorn AI?
             </h1>
 
@@ -225,7 +226,7 @@ const Features = () => {
               />
             </div>
 
-            <p className="text-[#E0E0E0] text-[20px]">
+            <p className="text-[#E0E0E0] xl:text-[20px] lg:text-[20px] md:text-[20px] text-[16px]">
               Charlie Unicorn AI isn't following trends — We are setting them.
               <br />
               <br />
@@ -234,24 +235,37 @@ const Features = () => {
               Charlie Unicorn AI is your once-in-a-lifetime opportunity.
             </p>
           </div>
+
+          <Image
+            src={InvestCharlieImage}
+            alt="Power of Charlie"
+            className="w-full xl:hidden lg:hidden flex h-auto object-cover"
+          />
         </div>
 
         {/* Join Revolution */}
-        <div className="w-full relative">
+        <div className="w-full relative xl:flex lg:flex hidden">
           <Image
             src={JoinRevolutionImage}
             alt="Join Revolution"
-            className="w-full h-auto object-cover"
+            className="w-full xl:flex lg:flex hidden h-auto object-cover"
           />
+
+          <Image
+            src={MobileJoinRevolutionImage}
+            alt="Join Revolution"
+            className="w-full xl:hidden lg:hidden flex h-auto object-cover"
+          />
+
           <div className="absolute bottom-24 w-full">
             <div className="w-[90%] mx-auto space-y-8">
-              <h1 className="text-white font-medium text-[42px]">
+              <h1 className="text-white font-medium xl:text-[42px] lg:text-[42px] md:text-[42px] text-[32px]">
                 Join the Revolution.
                 <br />
                 Be Part of the Unicorn Legacy.
               </h1>
 
-              <div className="flex items-center gap-6">
+              <div className="w-full xl:flex lg:flex hidden items-center gap-6">
                 <Button
                   type="primary"
                   label="BUY PRESALE"
@@ -260,6 +274,70 @@ const Features = () => {
                 />
                 <Button type="outline-secondary" label="WHITE PAPER" />
               </div>
+
+              <div className="w-full xl:hidden lg:hidden flex flex-col items-center gap-6">
+                <Button
+                  type="primary"
+                  label="BUY PRESALE"
+                  icon={ArrowRightIcon}
+                  hovered={true}
+                  width="full"
+                />
+                <Button
+                  type="outline-secondary"
+                  label="WHITE PAPER"
+                  width="full"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="w-full relative xl:hidden lg:hidden flex">
+        <Image
+          src={JoinRevolutionImage}
+          alt="Join Revolution"
+          className="w-full xl:flex lg:flex hidden h-auto object-cover"
+        />
+
+        <Image
+          src={MobileJoinRevolutionImage}
+          alt="Join Revolution"
+          className="w-full xl:hidden lg:hidden flex h-auto object-cover"
+        />
+
+        <div className="absolute bottom-24 w-full">
+          <div className="w-[90%] mx-auto space-y-8">
+            <h1 className="text-white font-medium xl:text-[42px] lg:text-[42px] md:text-[42px] text-[32px]">
+              Join the Revolution.
+              <br />
+              Be Part of the Unicorn Legacy.
+            </h1>
+
+            <div className="w-full xl:flex lg:flex hidden items-center gap-6">
+              <Button
+                type="primary"
+                label="BUY PRESALE"
+                icon={ArrowRightIcon}
+                hovered={true}
+              />
+              <Button type="outline-secondary" label="WHITE PAPER" />
+            </div>
+
+            <div className="w-full xl:hidden lg:hidden flex flex-col items-center gap-6">
+              <Button
+                type="primary"
+                label="BUY PRESALE"
+                icon={ArrowRightIcon}
+                hovered={true}
+                width="full"
+              />
+              <Button
+                type="outline-secondary"
+                label="WHITE PAPER"
+                width="full"
+              />
             </div>
           </div>
         </div>

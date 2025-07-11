@@ -21,14 +21,14 @@ const Games = () => {
   ];
 
   return (
-    <section id="games" className="w-full relative">
+    <section id="games" className="w-full relative overflow-hidden">
       <Image
         src={BackgroundImage}
         alt="Games background"
-        className="w-full h-auto"
+        className="w-full h-auto xl:flex lg:flex hidden"
       />
 
-      <div className="absolute inset-0 flex flex-col items-center justify-center py-14">
+      <div className="absolute inset-0 xl:flex lg:flex hidden flex-col items-center justify-center py-14">
         <div className="w-[80%] mx-auto flex flex-col items-center justify-center gap-8">
           <h2 className="text-[#E0E0E0] text-2xl text-center">
             Upcoming games
@@ -43,6 +43,21 @@ const Games = () => {
             You can play now our P2E game on telegram
           </p>
         </div>
+      </div>
+
+      <div className="xl:hidden lg:hidden flex w-[90%] mx-auto flex-col items-center justify-center gap-6">
+        <h2 className="text-[#E0E0E0] md:text-xl text-lg text-center">
+          Upcoming games
+          <br />
+          Q3 2025/Q1 2026
+          <br />
+          Your $CHRLE token as a game currency
+        </h2>
+        <h1 className="text-white font-black text-4xl">Games</h1>
+        <Slider slides={slides} />
+        <p className="text-[#E0E0E0] font-semibold md:text-xl text-lg text-center">
+          You can play now our P2E game on telegram
+        </p>
       </div>
     </section>
   );

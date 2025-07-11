@@ -117,7 +117,11 @@ const Button: React.FC<ButtonProps> = ({
 
   if (type === "outline") {
     return (
-      <div className="relative w-52 h-16 bg-primary-gradient rounded-full transition-all duration-300 hover:shadow-[0_0_8px_rgba(196,39,224,0.7),0_0_12px_rgba(132,74,255,0.5),0_0_16px_rgba(18,169,255,0.3)]">
+      <div
+        className={`relative ${
+          width ? "w-full" : "w-52"
+        } h-16 bg-primary-gradient rounded-full transition-all duration-300 hover:shadow-[0_0_8px_rgba(196,39,224,0.7),0_0_12px_rgba(132,74,255,0.5),0_0_16px_rgba(18,169,255,0.3)]`}
+      >
         <button
           className="
       absolute inset-[1px]
@@ -163,9 +167,8 @@ const Button: React.FC<ButtonProps> = ({
   if (type === "outline-secondary") {
     return (
       <button
-        className="
-      relative bg-secondary-gradient
-      w-52 h-16
+        className={`relative bg-secondary-gradient
+      ${width ? "w-full" : "w-52"} h-16
       flex items-center justify-center
       bg-transparent
       text-white
@@ -174,8 +177,7 @@ const Button: React.FC<ButtonProps> = ({
       gap-2
       overflow-hidden cursor-pointer
       p-[2px]
-      hover:shadow-[0_0_8px_rgba(196,39,224,0.7),0_0_12px_rgba(132,74,255,0.5),0_0_16px_rgba(18,169,255,0.3)]
-    "
+      hover:shadow-[0_0_8px_rgba(196,39,224,0.7),0_0_12px_rgba(132,74,255,0.5),0_0_16px_rgba(18,169,255,0.3)]`}
         onClick={onClick}
       >
         <span className="relative z-10 font-semibold text-lg bg-gradient-to-r from-[#ffa8d1] via-[#c3b1ff] to-[#aee2ff] bg-clip-text text-transparent">

@@ -29,16 +29,18 @@ const Goals = () => {
 
   return (
     <section className="w-full">
-      <div className="w-[80%] mx-auto flex items-center justify-between gap-14 bg-[#280C3F] p-10 rounded-2xl">
-        <div className="w-2/5 space-y-14">
-          <h1 className="text-white font-black text-7xl">Our Goals</h1>
+      <div className="xl:w-[80%] lg:w-[80%] w-[95%] mx-auto flex xl:flex-row lg:flex-row flex-col items-center xl:justify-between lg:justify-between xl:gap-14 lg:gap-14 gap-6 bg-[#280C3F] xl:p-10 lg:p-10 md:p-10 p-6 rounded-2xl">
+        <div className="xl:w-2/5 lg:w-2/5 w-full space-y-14">
+          <h1 className="text-white font-black xl:text-7xl lg:text-7xl text-4xl xl:text-left lg:text-left text-center">
+            Our Goals
+          </h1>
           <Image
             src={GoalsImage}
             alt="Goals"
             className="w-full h-auto object-cover"
           />
         </div>
-        <div className="w-3/5">
+        <div className="xl:w-3/5 lg:w-3/5 w-full">
           <AccordionGroup accordions={goals} />
         </div>
       </div>

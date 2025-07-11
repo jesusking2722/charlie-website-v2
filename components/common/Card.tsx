@@ -31,7 +31,7 @@ const Card: React.FC<ICard> = ({
     from-[rgba(196,39,224,0.2)]
     via-[rgba(132,74,255,0.2)]
     to-[rgba(18,169,255,0.2)]
-    rounded-lg w-[432px] h-[360px] ${innerClassName} overflow-hidden`}
+    rounded-lg xl:w-[432px] lg:w-[432px] w-full xl:h-[360px] lg:h-[360px] h-[300px] ${innerClassName} overflow-hidden`}
       >
         <div className={`absolute inset-[1px] ${bgOpacityClass} rounded-lg`}>
           <div
@@ -41,9 +41,13 @@ const Card: React.FC<ICard> = ({
           >
             <Image src={icon} alt={title} className="w-[104px] h-[104px]" />
 
-            <h1 className="text-white font-bold text-[32px]">{title}</h1>
+            <h1 className="text-white font-bold xl:text-[32px] lg:text-[32px] md:text-[32px] text-2xl">
+              {title}
+            </h1>
 
-            <p className="text-[#E0E0E0] text-[20px]">{description}</p>
+            <p className="text-[#E0E0E0] xl:text-[20px] lg:text-[20px] md:text-[20px] text-[16px]">
+              {description}
+            </p>
           </div>
         </div>
       </div>

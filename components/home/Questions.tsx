@@ -6,35 +6,46 @@ import TelegramIcon from "@/public/assets/svgs/telegram-plane.svg";
 const Questions = () => {
   return (
     <section className="w-full">
-      <div className="w-[80%] mx-auto">
-        <div className="w-full flex items-center gap-14 rounded-2xl bg-[#280C3F] p-10">
-          <div className="w-2/3 space-y-8">
-            <h1 className="text-white font-black text-7xl">Listings On</h1>
-            <p className="text-[#E0E0E0] font-medium text-[32px]">
-              Tier 1 and Tier 2 exchanges soon !
-            </p>
-          </div>
+      <div className="xl:w-[80%] lg:w-[80%] w-[95%] mx-auto xl:space-y-0 lg:space-y-0 space-y-14">
+        <div className="w-full flex xl:flex-row lg:flex-row flex-col items-center xl:gap-14 lg:gap-14 gap-6 rounded-2xl bg-[#280C3F] xl:p-10 lg:p-10 md:p-10 p-6">
           <Image
             src={ListingOnImage}
             alt="Listings On"
-            className="w-1/3 h-auto object-cover"
+            className="w-full h-auto object-cover xl:hidden lg:hidden flex"
+          />
+
+          <div className="xl:w-2/3 lg:w-2/3 w-full xl:space-y-8 lg:space-y-8 space-y-6">
+            <h1 className="text-white font-black xl:text-7xl lg:text-7xl text-4xl">
+              Listings On
+            </h1>
+            <p className="text-[#E0E0E0] font-medium xl:text-[32px] lg:text-[32px] text-[20px]">
+              Tier 1 and Tier 2 exchanges soon !
+            </p>
+          </div>
+
+          <Image
+            src={ListingOnImage}
+            alt="Listings On"
+            className="w-1/3 h-auto object-cover xl:flex lg:flex hidden"
           />
         </div>
 
-        <div className="w-[80%] mx-auto flex items-center justify-between">
+        <div className="w-[80%] mx-auto xl:flex lg:flex hidden items-center justify-between">
           <div className="w-[42px] h-[42px] bg-[#280C3F]"></div>
           <div className="w-[42px] h-[42px] bg-[#280C3F]"></div>
         </div>
 
-        <div className="w-full flex items-center gap-14 rounded-2xl bg-[#280C3F] p-10">
+        <div className="w-full flex xl:flex-row lg:flex-row flex-col items-center xl:gap-14 lg:gap-14 gap-6 rounded-2xl bg-[#280C3F] xl:p-10 lg:p-10 md:p-10 p-6">
           <Image
             src={QuestionImage}
             alt="Question"
-            className="w-1/3 h-auto object-cover"
+            className="xl:w-1/3 lg:w-1/3 w-full h-auto object-cover"
           />
-          <div className="w-2/3 space-y-8">
-            <h1 className="text-white font-black text-7xl">Questions??</h1>
-            <p className="text-[#E0E0E0] font-medium text-[32px]">
+          <div className="xl:w-2/3 lg:w-2/3 w-full xl:space-y-8 lg:space-y-8 space-y-6">
+            <h1 className="text-white font-black xl:text-7xl lg:text-7xl text-4xl">
+              Questions??
+            </h1>
+            <p className="text-[#E0E0E0] font-medium xl:text-[32px] lg:text-[32px] text-[20px]">
               Team of our moderators will surely help and answer all your
               questions
             </p>

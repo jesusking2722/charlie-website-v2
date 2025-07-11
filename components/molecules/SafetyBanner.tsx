@@ -16,7 +16,7 @@ const SafetyBanner = () => {
                 whitespace-nowrap 
                 animate-marquee 
                 text-[#E0E0E0] 
-                text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 
+                text-base sm:text-sm md:text-base lg:text-lg xl:text-xl
                 font-normal 
                 leading-relaxed
               "

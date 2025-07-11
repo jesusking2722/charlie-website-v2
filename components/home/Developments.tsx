@@ -24,14 +24,14 @@ const Developments = () => {
 
   return (
     <section className="w-full">
-      <div className="w-[80%] mx-auto space-y-28">
+      <div className="xl:w-[80%] lg:w-[80%] w-[95%] mx-auto space-y-28">
         {/* Completed developments */}
-        <div className="w-full space-y-14">
-          <h1 className="text-white font-black text-7xl text-center">
+        <div className="w-full xl:space-y-14 lg:space-y-14 space-y-6">
+          <h1 className="text-white font-black xl:text-7xl lg:text-7xl text-4xl text-center">
             Completed Developments
           </h1>
 
-          <div className="w-full grid grid-cols-3 gap-6">
+          <div className="w-full grid xl:grid-cols-3 lg:grid-cols-3 grid-cols-1 gap-6">
             {completedDevelopments.map((dev, index) => (
               <Button key={index} type="outline-primary" label={dev} />
             ))}
@@ -39,13 +39,13 @@ const Developments = () => {
         </div>
 
         {/* Ongoing developments */}
-        <div className="w-full flex items-center gap-6">
-          <div className="w-2/5">
-            <h1 className="text-white font-black text-7xl">
+        <div className="w-full flex xl:flex-row lg:flex-row flex-col items-center gap-6">
+          <div className="xl:w-2/5 lg:w-2/5 w-full">
+            <h1 className="text-white font-black xl:text-7xl lg:text-7xl text-4xl xl:text-left lg:text-left text-center">
               Ongoing Developments
             </h1>
           </div>
-          <div className="w-3/5 grid grid-cols-2 gap-6">
+          <div className="xl:w-3/5 lg:w-3/5 w-full grid xl:grid-cols-2 lg:grid-cols-2 grid-cols-1 gap-6">
             {ongoingDevelopments.map((dev, index) => (
               <div
                 key={index}

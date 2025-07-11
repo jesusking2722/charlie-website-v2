@@ -50,15 +50,15 @@ const About = () => {
   ];
 
   return (
-    <section className="w-full relative">
+    <section className="w-full relative xl:mt-0 lg:mt-0 md:mt-[200px] mt-[305px]">
       <Image
         src={BackgroundImage}
         alt="About Background"
-        className="w-full h-auto object-cover"
+        className="w-full h-auto object-cover xl:block lg:block hidden"
       />
 
       {/* Achievements */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center">
+      <div className="absolute inset-0 xl:flex lg:flex hidden flex-col items-center justify-center">
         <div className="w-[80%] mx-auto flex flex-col items-center justify-center gap-8">
           <div className="w-full relative flex justify-between">
             {cards.slice(0, 3).map((card, index) => (
@@ -81,6 +81,15 @@ const About = () => {
               />
             ))}
           </div>
+        </div>
+      </div>
+
+      <div className="xl:hidden lg:hidden w-[90%] mx-auto flex flex-col items-center gap-6">
+        <h1 className="text-white font-black text-4xl">Our Achievements</h1>
+        <div className="space-y-4 w-full">
+          {cards.map((card, index) => (
+            <Card key={index} {...card} />
+          ))}
         </div>
       </div>
     </section>

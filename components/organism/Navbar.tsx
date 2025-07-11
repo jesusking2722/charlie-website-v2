@@ -5,6 +5,7 @@ import { Button } from "../common";
 import TelegramIcon from "@/public/assets/svgs/telegram-plane.svg";
 import TwitterIcon from "@/public/assets/svgs/twitter.svg";
 import FacebookIcon from "@/public/assets/svgs/facebook.svg";
+import MenuIcon from "@/public/assets/svgs/menu.svg";
 
 type TNavItem = {
   label: string;
@@ -22,7 +23,7 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="w-[80%] mx-auto flex flex-row items-center justify-between p-2">
+    <header className="xl:w-[80%] lg:w-[80%] w-[95%] mx-auto flex flex-row items-center justify-between p-2">
       {/* Logo */}
       <Image
         src={LogoImage}
@@ -31,7 +32,7 @@ const Navbar = () => {
       />
 
       {/* Navs */}
-      <nav>
+      <nav className="xl:block lg:block hidden">
         <ul className="flex flex-row items-center gap-8">
           {navs.map((nav, index) => (
             <li key={index}>
@@ -47,10 +48,16 @@ const Navbar = () => {
       </nav>
 
       {/* Social Buttons */}
-      <div className="flex items-center gap-4">
+      <div className="xl:flex lg:flex hidden items-center gap-4">
         <Button type="icon" icon={TelegramIcon} />
         <Button type="icon" icon={TwitterIcon} />
         <Button type="icon" icon={FacebookIcon} />
+      </div>
+
+      <div className="xl:hidden lg:hidden flex items-center justify-center">
+        <button className="cursor-pointer">
+          <Image src={MenuIcon} alt="Menu" className="w-8 h-8" />
+        </button>
       </div>
     </header>
   );
