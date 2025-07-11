@@ -76,7 +76,7 @@ const Features = () => {
   };
 
   const handleWhitepaper = () => {
-    window.open("https://charlieunicornai.eu/whitepaper", "_blank");
+    window.open("https://charlieunicornai.eu/whitepaper.pdf", "_blank");
   };
 
   return (
