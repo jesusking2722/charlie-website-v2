@@ -47,10 +47,10 @@ const SafetyBanner = () => {
 const MarqueeText = () => (
   <p className="text-[#E0E0E0] text-base sm:text-sm md:text-base lg:text-lg xl:text-xl font-normal leading-relaxed pr-12">
     <Translate>
-      - Safety Warning | Beware of Scams! | The Little Pepe Team will NEVER
-      contact you directly through social media or messaging platforms. Always
-      verify official links only through our website: charlieunicornai.eu |
-      NEVER share your seed phrase or private key with anyone, not even with
+      - Safety Warning | Beware of Scams! | The Charlie Unicorn AI Team will
+      NEVER contact you directly through social media or messaging platforms.
+      Always verify official links only through our website: charlieunicornai.eu
+      | NEVER share your seed phrase or private key with anyone, not even with
       someone claiming to be from the team -
     </Translate>
   </p>

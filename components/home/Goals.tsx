@@ -38,7 +38,7 @@ const Goals = () => {
 
   return (
     <section className="w-full">
-      <div className="xl:w-[80%] lg:w-[80%] w-[95%] mx-auto flex xl:flex-row lg:flex-row flex-col items-center xl:justify-between lg:justify-between xl:gap-14 lg:gap-14 gap-6 bg-[#280C3F] xl:p-10 lg:p-10 md:p-10 p-6 rounded-2xl">
+      <div className="xl:w-[80%] lg:w-[80%] w-[90%] mx-auto flex xl:flex-row lg:flex-row flex-col items-center xl:justify-between lg:justify-between xl:gap-14 lg:gap-14 gap-6 bg-[#280C3F] xl:p-10 lg:p-10 md:p-10 p-6 rounded-2xl">
         <div className="xl:w-2/5 lg:w-2/5 w-full space-y-14">
           <h1 className="text-white font-black xl:text-7xl lg:text-7xl text-4xl xl:text-left lg:text-left text-center">
             <Translate>Our Goals</Translate>

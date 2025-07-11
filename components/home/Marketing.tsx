@@ -15,7 +15,7 @@ const Marketing = () => {
         "Engage directly with Charlie himself through our cutting-edge Artificial Intelligence chatbot. Crafted to embody the essence of Charlie, our chatbot delivers a delightful blend of practical assistance and uproarious humor.",
     },
     {
-      title: "Stake Your Charlie Tokens Once the Presale Ends!",
+      title: "Stake Your Charlie Tokens during the Presale!",
       description:
         "Unlock the full potential of your Charlie tokens through staking! It's a simple, effective, and rewarding process. By staking your Charlie tokens, you actively contribute to the growth of the Charlie ecosystem. Stake your 'CHRLE' tokens to earn competitive APYs in 'CHRLE,' along with an additional governance token.",
     },
@@ -56,7 +56,7 @@ const Marketing = () => {
         </div>
       </div>
 
-      <div className="xl:hidden lg:hidden flex flex-col items-center gap-6 w-[95%] mx-auto">
+      <div className="xl:hidden lg:hidden flex flex-col items-center gap-6 w-[90%] mx-auto">
         {cards.map((card, index) => (
           <div
             key={index}

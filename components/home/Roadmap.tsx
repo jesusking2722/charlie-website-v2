@@ -39,7 +39,6 @@ const Roadmap = () => {
                     "Create token smart contract.",
                     "Undergo a KYC and AUDIT.",
                     "Build the Charlie AI Chatbot.",
-                    "Design & craft the official 10K NFT collection.",
                   ],
                 },
                 {
@@ -61,16 +60,11 @@ const Roadmap = () => {
                   contents={[
                     {
                       labels: [
-                        "Build our official Website.",
-                        "Launch our NFT Collection.",
                         "Start Token Presale.",
                         "Launch P2E Game on Telegram.",
                         "Actively search for partnerships and collaborations.",
                         "Start Marketing.",
                         "Build Community Engagement.",
-                        "Write and animate Charlie’s Animation Series.",
-                        "Charlie Band Music Album on YT.",
-                        "Develop Cross chain Bridge.",
                       ],
                     },
                   ]}
@@ -130,7 +124,7 @@ const Roadmap = () => {
         </div>
       </div>
 
-      <div className="w-[95%] mx-auto xl:hidden lg:hidden flex flex-col items-center gap-6">
+      <div className="w-[90%] mx-auto xl:hidden lg:hidden flex flex-col items-center gap-6">
         <h1 className="text-white font-black xl:text-7xl lg:text-7xl text-4xl text-center">
           <Translate>Road Map</Translate>
         </h1>
@@ -155,7 +149,6 @@ const Roadmap = () => {
                   "Create token smart contract.",
                   "Undergo a KYC and AUDIT.",
                   "Build the Charlie AI Chatbot.",
-                  "Design & craft the official 10K NFT collection.",
                 ],
               },
               {
@@ -175,16 +168,11 @@ const Roadmap = () => {
             contents={[
               {
                 labels: [
-                  "Build our official Website.",
-                  "Launch our NFT Collection.",
                   "Start Token Presale.",
                   "Launch P2E Game on Telegram.",
                   "Actively search for partnerships and collaborations.",
                   "Start Marketing.",
                   "Build Community Engagement.",
-                  "Write and animate Charlie’s Animation Series.",
-                  "Charlie Band Music Album on YT.",
-                  "Develop Cross chain Bridge.",
                 ],
               },
             ]}

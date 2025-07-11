@@ -16,18 +16,35 @@ const About = () => {
       title: "EventUp WebParty App",
       description:
         "Development completed. A fully functional, user-friendly app bridging real-world events with blockchain innovation.",
+      path: "https://charlieparty.eu",
+    },
+    {
+      icon: EventUpIcon,
+      title: "Charlie Party App Store",
+      description:
+        "Development completed. A fully functional, user-friendly iOS app bridging real-world events with blockchain innovation.",
+      path: "https://apps.apple.com/pl/app/charlie-party/id6746444288",
+    },
+    {
+      icon: EventUpIcon,
+      title: "Charlie Party Google Play",
+      description:
+        "Development completed. A fully functional, user-friendly Android app bridging real-world events with blockchain innovation.",
+      path: "https://play.google.com/store/apps/details?id=com.charlieunicornai.charlieparty",
     },
     {
       icon: NFTMaIcon,
       title: "NFT Marketplace",
       description:
         "Live on BNB Chain, enabling users to trade and mint NFTs easily and securely.",
+      path: "https://charlieunicornaimarketplace.eu",
     },
     {
       icon: StylizedGoldenIcon,
       title: "Telegram Play-to-Earn Game",
       description:
         "A groundbreaking farming and reward experience where users can earn by farmingtokens and engaging with ads.",
+      path: "https://t.me/CharliegameBot",
     },
 
     {
@@ -35,18 +52,28 @@ const About = () => {
       title: "Multi-Chain Pre-Sale Platform",
       description:
         "Seamless investing across all major blockchains, designed for maximum user accessibility.",
+      path: "https://charlieunicornai-sale.eu",
     },
+
     {
-      icon: DateIcon,
-      title: "AI-Powered Dating App",
+      icon: MultiChainIcon,
+      title: "Staking",
       description:
-        "Ready to launch soon after EventUp, bringing smart matchmaking to Web3.",
+        "Unlock the full potential of your Charlie tokens through staking! It's a simple, effective, and rewarding process.",
+      path: "https://charlieunicornai-sale.eu",
     },
+    // {
+    //   icon: DateIcon,
+    //   title: "AI-Powered Dating App",
+    //   description:
+    //     "Ready to launch soon after EventUp, bringing smart matchmaking to Web3.",
+    // },
     {
       icon: CombiningTwoIcon,
       title: "Image Generator & Integrated ChatGPT",
       description:
         "Already operating within our Telegram community, creating an unmatched interactive experience.",
+      path: "https://t.me/CharlieUnicornaiOfficial",
     },
   ];
 
@@ -63,13 +90,13 @@ const About = () => {
 
       {/* Achievements */}
       <div className="absolute inset-0 xl:flex lg:flex hidden flex-col items-center justify-center">
-        <div className="w-[80%] mx-auto flex flex-col items-center justify-center gap-8">
+        <div className="w-[95%] mx-auto flex flex-col items-center justify-center gap-8">
           <div className="w-full relative flex justify-between">
-            {cards.slice(0, 3).map((card, index) => (
+            {cards.slice(0, 4).map((card, index) => (
               <Card
                 key={index}
                 {...card}
-                className={index === 1 ? "-translate-y-15" : ""}
+                className={index === 1 || index === 2 ? "-translate-y-15" : ""}
               />
             ))}
           </div>
@@ -79,11 +106,11 @@ const About = () => {
           </h1>
 
           <div className="w-full relative flex justify-between">
-            {cards.slice(3, 6).map((card, index) => (
+            {cards.slice(4, 8).map((card, index) => (
               <Card
                 key={index}
                 {...card}
-                className={index === 1 ? "translate-y-15" : ""}
+                className={index === 1 || index === 2 ? "translate-y-15" : ""}
               />
             ))}
           </div>

@@ -29,7 +29,7 @@ const Hero = () => {
       />
 
       <div className="absolute xl:flex lg:flex md:flex hidden w-full xl:h-1/2 lg:h-1/2 md:h-1/3 z-10 bottom-0 flex-col items-center justify-center">
-        <div className="xl:w-[80%] lg:w-[80%] w-[95%] mx-auto flex xl:flex-row lg:flex-row flex-col xl:items-end lg:items-end xl:gap-0 lg:gap-0 gap-8">
+        <div className="xl:w-[80%] lg:w-[80%] w-[90%] mx-auto flex xl:flex-row lg:flex-row flex-col xl:items-end lg:items-end xl:gap-0 lg:gap-0 gap-8">
           {/* Title & Buttons */}
           <div className="xl:w-1/2 lg:w-1/2 w-full lg:space-y-14 xl:space-y-14">
             <h1 className="text-white font-black xl:text-7xl lg:text-5xl text-4xl">
@@ -83,10 +83,9 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="xl:hidden lg:hidden md:hidden absolute flex w-[95%] left-[2.5%] -bottom-64 flex-col gap-6">
+      <div className="xl:hidden lg:hidden md:hidden absolute flex w-[90%] left-[2.5%] -bottom-64 flex-col gap-6">
         <h1 className="text-white font-black text-4xl">
-          Charlie Unicorn AI
-          <Translate>Ecosystem</Translate>
+          Charlie Unicorn AI <Translate> Ecosystem</Translate>
         </h1>
         <p className="text-white text-[16px]">
           <Translate>

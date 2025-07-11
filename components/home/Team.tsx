@@ -10,7 +10,7 @@ import { Translate } from "../common";
 const Team = () => {
   return (
     <section id="team" className="w-full">
-      <div className="xl:w-[70%] lg:w-[70%] w-[95%] mx-auto xl:space-y-14 lg:space-y-14 space-y-6">
+      <div className="xl:w-[70%] lg:w-[70%] w-[90%] mx-auto xl:space-y-14 lg:space-y-14 space-y-6">
         <h1 className="text-white font-black xl:text-7xl lg:text-7xl text-4xl">
           <Translate>CEO</Translate>
         </h1>

@@ -1,5 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 import Translate from "./Translate";
+import Link from "next/link";
 
 export interface ICard {
   icon: StaticImageData;
@@ -9,6 +10,7 @@ export interface ICard {
   innerClassName?: string;
   gap?: string;
   opacity?: number;
+  path?: string;
 }
 
 const Card: React.FC<ICard> = ({
@@ -19,6 +21,7 @@ const Card: React.FC<ICard> = ({
   innerClassName,
   gap,
   opacity,
+  path,
 }) => {
   const bgOpacityClass = opacity
     ? `bg-[rgba(40,12,63,${opacity})]`
@@ -26,32 +29,65 @@ const Card: React.FC<ICard> = ({
 
   return (
     <div className={className}>
-      <div
-        className={`relative
+      {path ? (
+        <Link href={path}>
+          <div
+            className={`relative
     bg-gradient-to-r
     from-[rgba(196,39,224,0.2)]
     via-[rgba(132,74,255,0.2)]
     to-[rgba(18,169,255,0.2)]
     rounded-lg xl:w-[432px] lg:w-[432px] w-full xl:h-[360px] lg:h-[360px] h-[300px] ${innerClassName} overflow-hidden`}
-      >
-        <div className={`absolute inset-[1px] ${bgOpacityClass} rounded-lg`}>
-          <div
-            className={`w-full flex flex-col items-start ${
-              gap ? gap : "gap-4"
-            } xl:p-6 lg:p-6 md:p-6 p-4 overflow-hidden`}
           >
-            <Image src={icon} alt={title} className="w-[104px] h-[104px]" />
+            <div
+              className={`absolute inset-[1px] ${bgOpacityClass} rounded-lg`}
+            >
+              <div
+                className={`w-full flex flex-col items-start ${
+                  gap ? gap : "gap-4"
+                } xl:p-6 lg:p-6 md:p-6 p-4 overflow-hidden`}
+              >
+                <Image src={icon} alt={title} className="w-[104px] h-[104px]" />
 
-            <h1 className="text-white font-bold xl:text-[32px] lg:text-[32px] md:text-[32px] text-2xl">
-              <Translate>{title}</Translate>
-            </h1>
+                <h1 className="text-white font-bold xl:text-[32px] lg:text-[32px] md:text-[32px] text-2xl">
+                  <Translate>{title}</Translate>
+                </h1>
 
-            <p className="text-[#E0E0E0] xl:text-[20px] lg:text-[20px] md:text-[20px] text-[16px]">
-              <Translate>{description}</Translate>
-            </p>
+                <p className="text-[#E0E0E0] xl:text-[20px] lg:text-[20px] md:text-[20px] text-[16px]">
+                  <Translate>{description}</Translate>
+                </p>
+              </div>
+            </div>
+          </div>
+        </Link>
+      ) : (
+        <div
+          className={`relative
+    bg-gradient-to-r
+    from-[rgba(196,39,224,0.2)]
+    via-[rgba(132,74,255,0.2)]
+    to-[rgba(18,169,255,0.2)]
+    rounded-lg xl:w-[432px] lg:w-[432px] w-full xl:h-[360px] lg:h-[360px] h-[300px] ${innerClassName} overflow-hidden`}
+        >
+          <div className={`absolute inset-[1px] ${bgOpacityClass} rounded-lg`}>
+            <div
+              className={`w-full flex flex-col items-start ${
+                gap ? gap : "gap-4"
+              } xl:p-6 lg:p-6 md:p-6 p-4 overflow-hidden`}
+            >
+              <Image src={icon} alt={title} className="w-[104px] h-[104px]" />
+
+              <h1 className="text-white font-bold xl:text-[32px] lg:text-[32px] md:text-[32px] text-2xl">
+                <Translate>{title}</Translate>
+              </h1>
+
+              <p className="text-[#E0E0E0] xl:text-[20px] lg:text-[20px] md:text-[20px] text-[16px]">
+                <Translate>{description}</Translate>
+              </p>
+            </div>
           </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };

@@ -16,16 +16,16 @@ import { FlowingLogos } from "../molecules";
 const Features = () => {
   const featuresCards: ICard[] = [
     {
-      icon: DexIcon,
-      title: "DEX Platform",
-      description:
-        "Currently in advanced development, designed for seamless, low-cost token trading across the ecosystem.",
-    },
-    {
       icon: FuturisticIcon,
       title: "Unicorn Racing World Game",
       description:
         "A masterpiece developed in Unreal Engine 5. Open world, racing, breeding, betting, and crafting. Expected completion: end of 2025.",
+    },
+    {
+      icon: DexIcon,
+      title: "DEX Platform",
+      description:
+        "Currently in advanced development, designed for seamless, low-cost token trading across the ecosystem.",
     },
     {
       icon: CrossBridgeIcon,

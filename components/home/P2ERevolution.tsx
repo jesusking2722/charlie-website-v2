@@ -14,7 +14,7 @@ const P2ERevolution = () => {
 
   return (
     <section className="w-full">
-      <div className="xl:w-[80%] lg:w-[80%] w-[95%] mx-auto flex xl:flex-row lg:flex-row flex-col items-center xl:justify-between lg:justify-between xl:gap-14 lg:gap-14 gap-6">
+      <div className="xl:w-[80%] lg:w-[80%] w-[90%] mx-auto flex xl:flex-row lg:flex-row flex-col items-center xl:justify-between lg:justify-between xl:gap-14 lg:gap-14 gap-6">
         <div className="xl:w-1/2 lg:w-1/2 w-full flex flex-col items-start gap-8">
           <h1 className="text-white font-black xl:text-7xl lg:text-7xl text-4xl">
             <Translate>P2E Revolution:</Translate>
@@ -26,7 +26,7 @@ const P2ERevolution = () => {
 
           {/* Buttons */}
           <div className="xl:flex lg:flex hidden items-center gap-6">
-            <button className="cursor-pointer hover:scale-105 transition-all duration-200">
+            {/* <button className="cursor-pointer hover:scale-105 transition-all duration-200">
               <Image
                 src={AppStoreImage}
                 alt="Download from App store"
@@ -39,7 +39,7 @@ const P2ERevolution = () => {
                 alt="Download from Google play"
                 className="w-full h-auto object-cover"
               />
-            </button>
+            </button> */}
             <button
               className="cursor-pointer hover:scale-105 transition-all duration-200"
               onClick={handleTelegram}
@@ -54,7 +54,7 @@ const P2ERevolution = () => {
 
           {/* Buttons */}
           <div className="xl:hidden lg:hidden flex flex-col w-full items-center gap-6">
-            <div className="w-full grid grid-cols-2 gap-6">
+            {/* <div className="w-full grid grid-cols-2 gap-6">
               <button className="cursor-pointer hover:scale-105 transition-all duration-200">
                 <Image
                   src={AppStoreImage}
@@ -69,7 +69,7 @@ const P2ERevolution = () => {
                   className="w-full h-auto object-cover"
                 />
               </button>
-            </div>
+            </div> */}
 
             <button
               className="cursor-pointer hover:scale-105 transition-all duration-200 w-full"
@@ -115,7 +115,7 @@ const P2ERevolution = () => {
             </div>
           </div>
 
-          <div className="relative w-full h-[32px] xl:block lg:block hidden bg-primary-gradient">
+          {/* <div className="relative w-full h-[32px] xl:block lg:block hidden bg-primary-gradient">
             <div className="absolute inset-[1px] bg-[#1A062A] grid grid-cols-4">
               <div className="border-primary-gradient-right px-5 flex items-center justify-center">
                 <span className=" text-[#E0E0E0] text-[20px]">
@@ -138,9 +138,9 @@ const P2ERevolution = () => {
                 </span>
               </div>
             </div>
-          </div>
+          </div> */}
 
-          <div className="relative w-full xl:hidden lg:hidden grid grid-cols-2 p-6 gap-6 border-primary-gradient">
+          {/* <div className="relative w-full xl:hidden lg:hidden grid grid-cols-2 p-6 gap-6 border-primary-gradient">
             <p className=" text-[#E0E0E0] text-[20px] text-center">
               <Translate>MULTICHAIN</Translate>
             </p>
@@ -153,7 +153,7 @@ const P2ERevolution = () => {
             <p className=" text-[#E0E0E0] text-[20px] text-center whitespace-nowrap">
               <Translate>PC GAME</Translate>
             </p>
-          </div>
+          </div> */}
         </div>
         <Image
           src={P2ERevolutionImage}

@@ -1,16 +1,23 @@
 import { Button, Translate } from "../common";
 
 const Developments = () => {
-  const completedDevelopments: string[] = [
-    "Website",
-    "NFT marketplace",
-    "Staking",
-    "Party app AppStore",
-    "Presale",
-    "Charlie party website",
-    "P2E TG",
-    "Chat bot",
-    "Free image generator",
+  const completedDevelopments = [
+    { title: "Website", path: "https://charlieunicornai.eu" },
+    {
+      title: "NFT marketplace",
+      path: "https://charlieunicornaimarketplace.eu",
+    },
+    {
+      title: "Party app AppStore",
+      path: "https://apps.apple.com/pl/app/charlie-party/id6746444288",
+    },
+    { title: "Charlie party website", path: "https://charlieparty.eu" },
+    { title: "P2E TG", path: "https://t.me/CharliegameBot" },
+    { title: "Chat bot", path: "https://t.me/CharlieUnicornaiOfficial" },
+    {
+      title: "Free image generator",
+      path: "https://t.me/CharlieUnicornaiOfficial",
+    },
   ];
 
   const ongoingDevelopments: string[] = [
@@ -22,9 +29,13 @@ const Developments = () => {
     "Multichain",
   ];
 
+  const handleDevelopment = (path: string) => {
+    window.open(path, "_blank");
+  };
+
   return (
     <section className="w-full">
-      <div className="xl:w-[80%] lg:w-[80%] w-[95%] mx-auto space-y-28">
+      <div className="xl:w-[80%] lg:w-[80%] w-[90%] mx-auto space-y-28">
         {/* Completed developments */}
         <div className="w-full xl:space-y-14 lg:space-y-14 space-y-6">
           <h1 className="text-white font-black xl:text-7xl lg:text-7xl text-4xl text-center">
@@ -33,13 +44,18 @@ const Developments = () => {
 
           <div className="w-full grid xl:grid-cols-3 lg:grid-cols-3 grid-cols-1 gap-6">
             {completedDevelopments.map((dev, index) => (
-              <Button key={index} type="outline-primary" label={dev} />
+              <Button
+                key={index}
+                type="outline-primary"
+                label={dev.title}
+                onClick={() => handleDevelopment(dev.path)}
+              />
             ))}
           </div>
         </div>
 
         {/* Ongoing developments */}
-        <div className="w-full flex xl:flex-row lg:flex-row flex-col items-center gap-6">
+        {/* <div className="w-full flex xl:flex-row lg:flex-row flex-col items-center gap-6">
           <div className="xl:w-2/5 lg:w-2/5 w-full">
             <h1 className="text-white font-black xl:text-7xl lg:text-7xl text-4xl xl:text-left lg:text-left text-center">
               <Translate>Ongoing Developments</Translate>
@@ -61,7 +77,7 @@ const Developments = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

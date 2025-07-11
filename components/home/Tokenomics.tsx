@@ -12,7 +12,7 @@ import { Translate } from "../common";
 const Tokenomics = () => {
   return (
     <section className="w-full -mt-24">
-      <div className="xl:w-[80%] lg:w-[80%] w-[95%] mx-auto flex xl:flex-row lg:flex-row flex-col items-center justify-center xl:gap-14 lg:gap-14 gap-0">
+      <div className="xl:w-[80%] lg:w-[80%] w-[90%] mx-auto flex xl:flex-row lg:flex-row flex-col items-center justify-center xl:gap-14 lg:gap-14 gap-0">
         <div className="xl:w-1/3 lg:w-1/3 w-full flex flex-col items-center gap-8">
           <h1 className="text-white font-black xl:text-7xl lg:text-7xl text-4xl">
             <Translate>Tokenomics</Translate>

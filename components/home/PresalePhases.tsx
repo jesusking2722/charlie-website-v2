@@ -37,7 +37,7 @@ const PresalePhases = () => {
 
   return (
     <section className="w-full -mt-24">
-      <div className="xl:w-[80%] lg:w-[80%] w-[95%] mx-auto xl:space-y-14 lg:space-y-14 space-y-6">
+      <div className="xl:w-[80%] lg:w-[80%] w-[90%] mx-auto xl:space-y-14 lg:space-y-14 space-y-6">
         <h1 className="text-center text-white font-black xl:text-7xl lg:text-7xl text-4xl">
           <Translate>Presale Phases</Translate>
         </h1>

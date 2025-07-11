@@ -94,7 +94,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="xl:w-[80%] lg:w-[80%] w-[95%] mx-auto flex flex-row items-center justify-between p-2 relative z-40">
+    <header className="xl:w-[80%] lg:w-[80%] w-[90%] mx-auto flex flex-row items-center justify-between p-2 relative z-40">
       {/* Logo */}
       <Image
         src={LogoImage}

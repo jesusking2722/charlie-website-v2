@@ -11,7 +11,7 @@ const Questions = () => {
 
   return (
     <section className="w-full">
-      <div className="xl:w-[80%] lg:w-[80%] w-[95%] mx-auto xl:space-y-0 lg:space-y-0 space-y-14">
+      <div className="xl:w-[80%] lg:w-[80%] w-[90%] mx-auto xl:space-y-0 lg:space-y-0 space-y-14">
         <div className="w-full flex xl:flex-row lg:flex-row flex-col items-center xl:gap-14 lg:gap-14 gap-6 rounded-2xl bg-[#280C3F] xl:p-10 lg:p-10 md:p-10 p-6">
           <Image
             src={ListingOnImage}

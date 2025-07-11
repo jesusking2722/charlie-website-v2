@@ -39,7 +39,7 @@ export default function Home() {
           <Roadmap />
           <Tokenomics />
           <PresalePhases />
-          <Developments />
+          {/* <Developments /> */}
           <Marketing />
           <Goals />
           <Questions />

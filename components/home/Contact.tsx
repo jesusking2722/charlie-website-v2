@@ -154,7 +154,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="xl:hidden lg:hidden flex w-[95%] mx-auto flex-col gap-6">
+      <div className="xl:hidden lg:hidden flex w-[90%] mx-auto flex-col gap-6">
         <h1 className="text-white font-black text-4xl text-left">Contact Us</h1>
         <Image
           src={ContactImage}
