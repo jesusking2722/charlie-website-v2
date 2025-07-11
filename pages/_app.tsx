@@ -3,6 +3,7 @@ import { TopButton } from "@/components/molecules";
 import { LanguageProvider } from "@/components/providers/LanguageProvider";
 import "@/styles/globals.css";
 import "@/styles/molecules.styles.css";
+import "@/styles/responsive.css";
 import cacheProvider from "@/utils/cacheProvider";
 import type { AppProps } from "next/app";
 import { ToastContainer } from "react-toastify";

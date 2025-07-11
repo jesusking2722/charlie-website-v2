@@ -37,7 +37,7 @@ const Card: React.FC<ICard> = ({
           <div
             className={`w-full flex flex-col items-start ${
               gap ? gap : "gap-4"
-            } p-6`}
+            } xl:p-6 lg:p-6 md:p-6 p-4`}
           >
             <Image src={icon} alt={title} className="w-[104px] h-[104px]" />
 

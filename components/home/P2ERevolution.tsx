@@ -8,6 +8,10 @@ import { Radio } from "../common";
 import Link from "next/link";
 
 const P2ERevolution = () => {
+  const handleTelegram = () => {
+    window.open("https://t.me/CharliegameBot", "_blank");
+  };
+
   return (
     <section className="w-full">
       <div className="xl:w-[80%] lg:w-[80%] w-[95%] mx-auto flex xl:flex-row lg:flex-row flex-col items-center xl:justify-between lg:justify-between xl:gap-14 lg:gap-14 gap-6">
@@ -36,7 +40,10 @@ const P2ERevolution = () => {
                 className="w-full h-auto object-cover"
               />
             </button>
-            <button className="cursor-pointer hover:scale-105 transition-all duration-200">
+            <button
+              className="cursor-pointer hover:scale-105 transition-all duration-200"
+              onClick={handleTelegram}
+            >
               <Image
                 src={TelegramButtonImage}
                 alt="Telegram"
@@ -64,7 +71,10 @@ const P2ERevolution = () => {
               </button>
             </div>
 
-            <button className="cursor-pointer hover:scale-105 transition-all duration-200 w-full">
+            <button
+              className="cursor-pointer hover:scale-105 transition-all duration-200 w-full"
+              onClick={handleTelegram}
+            >
               <Image
                 src={MobileTelegramButtonImage}
                 alt="Telegram"

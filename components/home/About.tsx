@@ -50,11 +50,14 @@ const About = () => {
   ];
 
   return (
-    <section className="w-full relative xl:mt-0 lg:mt-0 md:mt-[200px] mt-[305px]">
+    <section
+      id="about"
+      className="w-full relative xl:mt-0 lg:mt-0 md:mt-[200px] mt-[305px]"
+    >
       <Image
         src={BackgroundImage}
         alt="About Background"
-        className="w-full h-auto object-cover xl:block lg:block hidden"
+        className="w-full h-auto object-cover xl:block lg:block hidden about-bg"
       />
 
       {/* Achievements */}

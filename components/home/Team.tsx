@@ -33,7 +33,7 @@ const Team = () => {
               </span>
             </div>
             <div className="flex items-center gap-4">
-              <Link href="">
+              <Link href="https://pl.linkedin.com/in/%C5%82ukasz-szymborski-8bab38205?utm_source=share&utm_medium=member_mweb&utm_campaign=share_via&utm_content=profile">
                 <Image
                   src={LinkedinIcon}
                   alt="Linkedin"

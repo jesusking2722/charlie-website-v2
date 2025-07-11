@@ -5,6 +5,14 @@ import ArrowRightIcon from "@/public/assets/svgs/arrow_right.svg";
 import { Button } from "../common";
 
 const Hero = () => {
+  const handleJoinPresale = () => {
+    window.open("https://charlieunicornai-sale.eu", "_blank");
+  };
+
+  const handleLearnMore = () => {
+    document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section className="w-full relative sm:mt-0">
       <Image
@@ -33,8 +41,13 @@ const Hero = () => {
                 label="JOIN PRESALE"
                 icon={ArrowRightIcon}
                 hovered={true}
+                onClick={handleJoinPresale}
               />
-              <Button type="outline" label="LEARN MORE" />
+              <Button
+                type="outline"
+                label="LEARN MORE"
+                onClick={handleLearnMore}
+              />
             </div>
           </div>
 
@@ -56,8 +69,14 @@ const Hero = () => {
               icon={ArrowRightIcon}
               hovered={true}
               width="full"
+              onClick={handleJoinPresale}
             />
-            <Button type="outline" label="LEARN MORE" width="full" />
+            <Button
+              type="outline"
+              label="LEARN MORE"
+              width="full"
+              onClick={handleLearnMore}
+            />
           </div>
         </div>
       </div>
@@ -80,8 +99,14 @@ const Hero = () => {
             icon={ArrowRightIcon}
             hovered={true}
             width="full"
+            onClick={handleJoinPresale}
           />
-          <Button type="outline" label="LEARN MORE" width="full" />
+          <Button
+            type="outline"
+            label="LEARN MORE"
+            width="full"
+            onClick={handleLearnMore}
+          />
         </div>
       </div>
     </section>

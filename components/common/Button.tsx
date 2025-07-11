@@ -48,7 +48,7 @@ const Button: React.FC<ButtonProps> = ({
         className={`bg-primary-gradient flex items-center justify-center rounded-full border-2 border-white 
         text-white font-semibold text-lg ${
           width ? "w-full" : "px-8"
-        } h-16 gap-2 transition-all duration-300 ${
+        } xl:h-16 lg:h-16 md:h-16 h-[56px] gap-2 transition-all duration-300 ${
           hovered
             ? `shadow-[0_0_10px_rgba(196,39,224,0.9),0_0_14px_rgba(132,74,255,0.7),0_0_18px_rgba(18,169,255,0.5)]
             ${
@@ -88,7 +88,7 @@ const Button: React.FC<ButtonProps> = ({
     return (
       <button
         className={`bg-primary-gradient flex items-center justify-center rounded-full border-2 border-white 
-        text-white font-semibold text-lg w-16 h-16 gap-2 transition-all duration-300 ${
+        text-white font-semibold text-lg w-16 xl:h-16 lg:h-16 md:h-16 h-[56px] gap-2 transition-all duration-300 ${
           hovered
             ? `shadow-[0_0_10px_rgba(196,39,224,0.9),0_0_14px_rgba(132,74,255,0.7),0_0_18px_rgba(18,169,255,0.5)]
             ${
@@ -120,7 +120,7 @@ const Button: React.FC<ButtonProps> = ({
       <div
         className={`relative ${
           width ? "w-full" : "w-52"
-        } h-16 bg-primary-gradient rounded-full transition-all duration-300 hover:shadow-[0_0_8px_rgba(196,39,224,0.7),0_0_12px_rgba(132,74,255,0.5),0_0_16px_rgba(18,169,255,0.3)]`}
+        } xl:h-16 lg:h-16 md:h-16 h-[56px] bg-primary-gradient rounded-full transition-all duration-300 hover:shadow-[0_0_8px_rgba(196,39,224,0.7),0_0_12px_rgba(132,74,255,0.5),0_0_16px_rgba(18,169,255,0.3)]`}
       >
         <button
           className="
@@ -168,7 +168,7 @@ const Button: React.FC<ButtonProps> = ({
     return (
       <button
         className={`relative bg-secondary-gradient
-      ${width ? "w-full" : "w-52"} h-16
+      ${width ? "w-full" : "w-52"} xl:h-16 lg:h-16 md:h-16 h-[56px]
       flex items-center justify-center
       bg-transparent
       text-white

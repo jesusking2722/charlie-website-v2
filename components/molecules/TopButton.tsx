@@ -47,7 +47,7 @@ const TopButton = () => {
               ease: "easeInOut",
             },
           }}
-          className="w-16 h-16 flex items-center justify-center fixed bottom-5 right-5 z-50"
+          className="w-16 h-16 flex items-center justify-center fixed bottom-5 right-5 z-30"
         >
           <Button
             type="primary-icon"

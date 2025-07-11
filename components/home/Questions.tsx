@@ -4,6 +4,10 @@ import QuestionImage from "@/public/assets/pngs/question.png";
 import TelegramIcon from "@/public/assets/svgs/telegram-plane.svg";
 
 const Questions = () => {
+  const handleTelegram = () => {
+    window.open("https://t.me/CharlieUnicornaiOfficial", "_blank");
+  };
+
   return (
     <section className="w-full">
       <div className="xl:w-[80%] lg:w-[80%] w-[95%] mx-auto xl:space-y-0 lg:space-y-0 space-y-14">
@@ -50,7 +54,10 @@ const Questions = () => {
               questions
             </p>
             <div className="relative w-[71px] h-[71px] bg-primary-gradient rounded-md transition-all duration-300 hover:shadow-[0_0_8px_rgba(196,39,224,0.7),0_0_12px_rgba(132,74,255,0.5),0_0_16px_rgba(18,169,255,0.3)]">
-              <button className="absolute inset-[1px] flex items-center justify-center bg-[#280C3F] rounded-md p-1 cursor-pointer">
+              <button
+                className="absolute inset-[1px] flex items-center justify-center bg-[#280C3F] rounded-md p-1 cursor-pointer"
+                onClick={handleTelegram}
+              >
                 <Image src={TelegramIcon} alt="Icon" className="w-14 h-14" />
               </button>
             </div>

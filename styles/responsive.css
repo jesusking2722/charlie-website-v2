@@ -1,0 +1,9 @@
+@media (width: 1440px) {
+  .about-bg {
+    height: 1200px !important;
+  }
+
+  .about-container {
+    width: 100% !important;
+  }
+}

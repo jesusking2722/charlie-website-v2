@@ -71,6 +71,14 @@ const Features = () => {
     "Multichain",
   ];
 
+  const handleBuyPresale = () => {
+    window.open("https://charlieunicornai-sale.eu", "_blank");
+  };
+
+  const handleWhitepaper = () => {
+    window.open("https://charlieunicornai.eu/whitepaper", "_blank");
+  };
+
   return (
     <section
       id="features"
@@ -271,8 +279,13 @@ const Features = () => {
                   label="BUY PRESALE"
                   icon={ArrowRightIcon}
                   hovered={true}
+                  onClick={handleBuyPresale}
                 />
-                <Button type="outline-secondary" label="WHITE PAPER" />
+                <Button
+                  type="outline-secondary"
+                  label="WHITE PAPER"
+                  onClick={handleWhitepaper}
+                />
               </div>
 
               <div className="w-full xl:hidden lg:hidden flex flex-col items-center gap-6">
@@ -282,11 +295,13 @@ const Features = () => {
                   icon={ArrowRightIcon}
                   hovered={true}
                   width="full"
+                  onClick={handleBuyPresale}
                 />
                 <Button
                   type="outline-secondary"
                   label="WHITE PAPER"
                   width="full"
+                  onClick={handleWhitepaper}
                 />
               </div>
             </div>
@@ -307,7 +322,7 @@ const Features = () => {
           className="w-full xl:hidden lg:hidden flex h-auto object-cover"
         />
 
-        <div className="absolute bottom-24 w-full">
+        <div className="absolute md:bottom-24 bottom-6 w-full">
           <div className="w-[90%] mx-auto space-y-8">
             <h1 className="text-white font-medium xl:text-[42px] lg:text-[42px] md:text-[42px] text-[32px]">
               Join the Revolution.
@@ -321,8 +336,13 @@ const Features = () => {
                 label="BUY PRESALE"
                 icon={ArrowRightIcon}
                 hovered={true}
+                onClick={handleBuyPresale}
               />
-              <Button type="outline-secondary" label="WHITE PAPER" />
+              <Button
+                type="outline-secondary"
+                label="WHITE PAPER"
+                onClick={handleWhitepaper}
+              />
             </div>
 
             <div className="w-full xl:hidden lg:hidden flex flex-col items-center gap-6">
@@ -332,11 +352,13 @@ const Features = () => {
                 icon={ArrowRightIcon}
                 hovered={true}
                 width="full"
+                onClick={handleBuyPresale}
               />
               <Button
                 type="outline-secondary"
                 label="WHITE PAPER"
                 width="full"
+                onClick={handleWhitepaper}
               />
             </div>
           </div>
