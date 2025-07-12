@@ -28,7 +28,6 @@ const Roadmap = () => {
                     "Create Whitepaper.",
                     "Start development.",
                     "Create landing website.",
-                    "Build NFT Minting Website.",
                     "Build Token Presale Website.",
                     "Create social media accounts.",
                   ],
@@ -45,8 +44,7 @@ const Roadmap = () => {
                   subtitle: "Build Minigame",
                   labels: [
                     "Build our NFT marketplace.",
-                    "Design & craft the official 10K NFT collection.",
-                    "Build a P2E application for telegram and App Store.",
+                    "Build a P2E application for telegram.",
                   ],
                 },
               ]}
@@ -63,7 +61,6 @@ const Roadmap = () => {
                         "Start Token Presale.",
                         "Launch P2E Game on Telegram.",
                         "Actively search for partnerships and collaborations.",
-                        "Start Marketing.",
                         "Build Community Engagement.",
                       ],
                     },
@@ -75,16 +72,12 @@ const Roadmap = () => {
                   contents={[
                     {
                       labels: [
-                        "Develop DEX.",
-                        "Develop staking and farms.",
-                        "End season one on P2E Game.",
-                        "Develop NFT games for PC and Mobile devices.",
-                        "Develop our own blockchain.",
-                        "Develop launchpad.",
-                        "Start building blockchain.",
-                        "Start building launchpad.",
-                        "Create online store.",
-                        "Improvements and upgrades to our Artificial intelligence.",
+                        "Implement Battles in the P2E Game",
+                        "Unreal Engine 5 Game Development (PC & Mobile)",
+                        "Presale Staking with JuicyAPY – ✅ Completed",
+                        "Custom Burning Bot – ✅ Completed",
+                        "Charlie Party App (iOS, Android & Web) – ✅ Completed",
+                        "Charlie Presale Bot – ✅ Completed",
                       ],
                     },
                   ]}
@@ -100,7 +93,11 @@ const Roadmap = () => {
                       labels: [
                         "Develop Charlie’s Dating Application.",
                         "Start Season two on the P2E Game.",
+                        "Develop DEX.",
+                        "Develop launchpad.",
                         "Develop Charlie Wallet.",
+                        "Develop Charlie's own blockchain",
+                        "Improvements and upgrades to our Artificial intelligence.",
                       ],
                     },
                   ]}
@@ -138,7 +135,6 @@ const Roadmap = () => {
                   "Create Whitepaper.",
                   "Start development.",
                   "Create landing website.",
-                  "Build NFT Minting Website.",
                   "Build Token Presale Website.",
                   "Create social media accounts.",
                 ],
@@ -155,8 +151,7 @@ const Roadmap = () => {
                 subtitle: "Build Minigame",
                 labels: [
                   "Build our NFT marketplace.",
-                  "Design & craft the official 10K NFT collection.",
-                  "Build a P2E application for telegram and App Store.",
+                  "Build a P2E application for telegram.",
                 ],
               },
             ]}
@@ -171,7 +166,6 @@ const Roadmap = () => {
                   "Start Token Presale.",
                   "Launch P2E Game on Telegram.",
                   "Actively search for partnerships and collaborations.",
-                  "Start Marketing.",
                   "Build Community Engagement.",
                 ],
               },
@@ -183,16 +177,12 @@ const Roadmap = () => {
             contents={[
               {
                 labels: [
-                  "Develop DEX.",
-                  "Develop staking and farms.",
-                  "End season one on P2E Game.",
-                  "Develop NFT games for PC and Mobile devices.",
-                  "Develop our own blockchain.",
-                  "Develop launchpad.",
-                  "Start building blockchain.",
-                  "Start building launchpad.",
-                  "Create online store.",
-                  "Improvements and upgrades to our Artificial intelligence.",
+                  "Implement Battles in the P2E Game",
+                  "Unreal Engine 5 Game Development (PC & Mobile)",
+                  "Presale Staking with JuicyAPY – ✅ Completed",
+                  "Custom Burning Bot – ✅ Completed",
+                  "Charlie Party App (iOS, Android & Web) – ✅ Completed",
+                  "Charlie Presale Bot – ✅ Completed",
                 ],
               },
             ]}
@@ -206,7 +196,11 @@ const Roadmap = () => {
                 labels: [
                   "Develop Charlie’s Dating Application.",
                   "Start Season two on the P2E Game.",
+                  "Develop DEX.",
+                  "Develop launchpad.",
                   "Develop Charlie Wallet.",
+                  "Develop Charlie's own blockchain",
+                  "Improvements and upgrades to our Artificial intelligence.",
                 ],
               },
             ]}
