@@ -60,14 +60,8 @@ const About = () => {
       title: "Staking",
       description:
         "Unlock the full potential of your Charlie tokens through staking! It's a simple, effective, and rewarding process.",
-      path: "https://charlieunicornai-sale.eu",
+      path: "https://charliestaking.eu",
     },
-    // {
-    //   icon: DateIcon,
-    //   title: "AI-Powered Dating App",
-    //   description:
-    //     "Ready to launch soon after EventUp, bringing smart matchmaking to Web3.",
-    // },
     {
       icon: CombiningTwoIcon,
       title: "Image Generator & Integrated ChatGPT",
